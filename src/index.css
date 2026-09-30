@@ -152,3 +152,14 @@ tbody tr:hover td { background: var(--surface-2); }
 .tabs a[aria-current="page"] { color: var(--text-primary); border-bottom-color: var(--accent); }
 
 .tile .value.compact { font-size: 20px; line-height: 1.25; margin-top: 8px; }
+
+/* Month picker */
+.select {
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--text-primary);
+  background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 999px;
+  padding: 4px 30px 4px 12px; cursor: pointer; appearance: none; -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-secondary) 50%), linear-gradient(135deg, var(--text-secondary) 50%, transparent 50%);
+  background-position: calc(100% - 16px) 55%, calc(100% - 11px) 55%; background-size: 5px 5px, 5px 5px; background-repeat: no-repeat;
+}
+.select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.btn.small { padding: 4px 10px; font-size: 12px; border-radius: 999px; }

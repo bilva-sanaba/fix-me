@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { Bar, BarChart, CartesianGrid, Cell, Legend, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { Cart } from "../lib/types";
+import { isUnknownRestaurant } from "../lib/analytics";
 import { monthSeries, movers, topMovers, type Mover, type MoversResult } from "../lib/trends";
 
 const tooltipStyle = {
@@ -73,7 +74,7 @@ function MoversCard({ title, entity, result, color, limit = 10 }: { title: strin
 
 export function TrendsPage({ carts }: { carts: Cart[] }) {
   const people = useMemo(() => movers(carts, (c) => c.createdBy), [carts]);
-  const restaurants = useMemo(() => movers(carts, (c) => c.restaurant), [carts]);
+  const restaurants = useMemo(() => movers(carts.filter((c) => !isUnknownRestaurant(c)), (c) => c.restaurant), [carts]);
   const topPeople = useMemo(() => (people ? topMovers(people.movers, 4).map((m) => m.name) : []), [people]);
   const series = useMemo(() => monthSeries(carts, (c) => c.createdBy, topPeople), [carts, topPeople]);
 

@@ -67,9 +67,9 @@ export function cartsByCreator(carts: Cart[]): RankedRow[] {
   return rankBy(carts, (c) => c.createdBy);
 }
 
-/** Which restaurants get the most carts. */
+/** Which restaurants get the most carts. Unknown restaurants are left out; they would dwarf everything. */
 export function cartsByRestaurant(carts: Cart[]): RankedRow[] {
-  return rankBy(carts, (c) => c.restaurant);
+  return rankBy(carts.filter((c) => !isUnknownRestaurant(c)), (c) => c.restaurant);
 }
 
 /** Which carts get the most reactions. */
@@ -151,4 +151,35 @@ export function topCombo(carts: Cart[]): Combo | undefined {
     if (!best || row.carts > best.carts || (row.carts === best.carts && row.carts / row.personTotal > best.carts / best.personTotal)) best = row;
   }
   return best;
+}
+
+/** True for carts whose restaurant we couldn't identify. */
+export const isUnknownRestaurant = (c: Cart) => !c.restaurant || /^unknown$/i.test(c.restaurant.trim());
+
+export interface MonthOption {
+  /** "2026-09" */
+  key: string;
+  /** "September 2026" */
+  label: string;
+}
+
+const monthKeyOf = (iso: string) => {
+  const d = new Date(iso);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+};
+
+/** Every calendar month present in the data, newest first (viewer's local time). */
+export function monthsIn(carts: Cart[]): MonthOption[] {
+  const keys = new Set(carts.map((c) => monthKeyOf(c.createdAt)));
+  return [...keys]
+    .sort()
+    .reverse()
+    .map((key) => {
+      const [y, m] = key.split("-").map(Number);
+      return { key, label: new Date(y, m - 1, 1).toLocaleDateString(undefined, { month: "long", year: "numeric" }) };
+    });
+}
+
+export function cartsInMonth(carts: Cart[], key: string): Cart[] {
+  return carts.filter((c) => monthKeyOf(c.createdAt) === key);
 }

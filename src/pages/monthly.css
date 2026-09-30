@@ -1,0 +1,15 @@
+.month-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.podium { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.podium li { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); }
+.podium .name { flex: 1; font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.podium .count { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.badge {
+  flex: none; width: 24px; height: 24px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 750; color: #1a1408;
+}
+.badge.r1 { background: linear-gradient(135deg, #f7d774, #d4a017); box-shadow: 0 0 10px rgba(212, 160, 23, 0.45); }
+.badge.r2 { background: linear-gradient(135deg, #e6e9ef, #a8b0bd); }
+.badge.r3 { background: linear-gradient(135deg, #e0a476, #b5713d); }
+.month-foot { margin-top: 12px; color: var(--text-muted); font-size: 12px; }
+.month-card.winner-month { border-color: var(--amber); }

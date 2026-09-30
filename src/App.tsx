@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import cartsCsv from "../nyc_food_yum_doordash_carts.csv?raw";
+import cartsCsv from "../nyc_food_yum_doordash_carts_12mo.csv?raw";
 import { OverviewPage } from "./pages/Overview";
 import { TrendsPage } from "./pages/Trends";
 import { MonthlyPage } from "./pages/Monthly";
@@ -9,7 +9,7 @@ import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
 
 const DEFAULT_CARTS = parseCartsCsv(cartsCsv);
-const DEFAULT_SOURCE = "nyc_food_yum_doordash_carts.csv";
+const DEFAULT_SOURCE = "nyc_food_yum_doordash_carts_12mo.csv";
 
 type Theme = "dark" | "light";
 const THEME_KEY = "dd-theme";
@@ -94,7 +94,7 @@ export default function App() {
       <Page carts={carts} />
 
       <footer className="footer">
-        Data comes from nyc_food_yum_doordash_carts.csv at build time. Parsing lives in src/lib/csv.ts.
+        Data comes from nyc_food_yum_doordash_carts_12mo.csv at build time. Parsing lives in src/lib/csv.ts.
       </footer>
     </div>
   );

@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import sample from "./data/sample-carts.json";
-import { StatTile } from "./components/StatTile";
-import { RankedBarCard } from "./components/RankedBarCard";
-import { TopCartsTable } from "./components/TopCartsTable";
 import { UploadButton } from "./components/UploadButton";
-import { cartsByCreator, cartsByDayOfWeek, cartsByRestaurant, latestMonth, summarize, topReactedCarts } from "./lib/analytics";
+import { OverviewPage } from "./pages/Overview";
+import { TrendsPage } from "./pages/Trends";
+import { MonthlyPage } from "./pages/Monthly";
+import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
 
 const SAMPLE = sample as unknown as Cart[];
@@ -22,6 +22,19 @@ function initialTheme(): Theme {
   return "dark";
 }
 
+/** Hash-based routes so the app stays a single static page. */
+const ROUTES = [
+  { id: "overview", label: "Overview", Page: OverviewPage },
+  { id: "trends", label: "Trends", Page: TrendsPage },
+  { id: "monthly", label: "Monthly winners", Page: MonthlyPage },
+] as const;
+type RouteId = (typeof ROUTES)[number]["id"];
+
+function routeFromHash(): RouteId {
+  const id = location.hash.replace(/^#\/?/, "");
+  return (ROUTES.some((r) => r.id === id) ? id : "overview") as RouteId;
+}
+
 const fmtDay = (iso: string) => new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
 export default function App() {
@@ -29,6 +42,13 @@ export default function App() {
   const [source, setSource] = useState("sample data");
   const [error, setError] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>(initialTheme);
+  const [route, setRoute] = useState<RouteId>(routeFromHash);
+
+  useEffect(() => {
+    const onHash = () => setRoute(routeFromHash());
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -39,13 +59,8 @@ export default function App() {
     }
   }, [theme]);
 
-  const allTime = useMemo(() => summarize(carts), [carts]);
-  const month = useMemo(() => latestMonth(carts), [carts]);
-  const monthly = useMemo(() => summarize(month?.carts ?? []), [month]);
-  const byCreator = useMemo(() => cartsByCreator(carts), [carts]);
-  const byRestaurant = useMemo(() => cartsByRestaurant(carts), [carts]);
-  const byDay = useMemo(() => cartsByDayOfWeek(carts), [carts]);
-  const topCarts = useMemo(() => topReactedCarts(carts, 10), [carts]);
+  const range = useMemo(() => summarize(carts).range, [carts]);
+  const Page = ROUTES.find((r) => r.id === route)!.Page;
 
   return (
     <div className="app">
@@ -54,7 +69,7 @@ export default function App() {
           <h1>DoorDash Cart Analytics</h1>
           <div className="sub">
             Source: {source}
-            {allTime.range && ` · ${fmtDay(allTime.range.from)} – ${fmtDay(allTime.range.to)}`}
+            {range && ` · ${fmtDay(range.from)} – ${fmtDay(range.to)}`}
           </div>
         </div>
         <div className="actions">
@@ -78,33 +93,15 @@ export default function App() {
         </div>
       </header>
 
+      <nav className="tabs" aria-label="Pages">
+        {ROUTES.map((r) => (
+          <a key={r.id} href={`#/${r.id}`} aria-current={route === r.id ? "page" : undefined}>{r.label}</a>
+        ))}
+      </nav>
+
       {error && <div className="error">Couldn't load that file: {error}</div>}
 
-      <section>
-        <div className="section-head">
-          <h2>Latest month</h2>
-          <span className="pill">{month?.label ?? "No data"}</span>
-        </div>
-        <div className="tiles">
-          <StatTile label="Carts" value={monthly.totalCarts} hint={`All time: ${allTime.totalCarts.toLocaleString()}`} accent="var(--coral)" />
-          <StatTile label="People who made a cart" value={monthly.uniqueCreators} hint={`All time: ${allTime.uniqueCreators.toLocaleString()}`} accent="var(--violet)" />
-          <StatTile label="Unique restaurants" value={monthly.uniqueRestaurants} hint={`All time: ${allTime.uniqueRestaurants.toLocaleString()}`} accent="var(--teal)" />
-          <StatTile
-            label="Reactions"
-            value={monthly.totalReactions}
-            hint={monthly.totalCarts ? `${(monthly.totalReactions / monthly.totalCarts).toFixed(1)} per cart · all time: ${allTime.totalReactions.toLocaleString()}` : `All time: ${allTime.totalReactions.toLocaleString()}`}
-            accent="var(--amber)"
-          />
-        </div>
-      </section>
-
-      <section className="grid">
-        <RankedBarCard title="Who makes the most carts" description="Carts posted per person, all time" rows={byCreator} color="var(--coral)" />
-        <RankedBarCard title="Most-carted restaurants" description="Carts per restaurant, all time" rows={byRestaurant} color="var(--violet)" />
-        <RankedBarCard title="Carts by day of week" description="Total carts posted on each weekday" rows={byDay} layout="columns" color="var(--teal)" />
-        <RankedBarCard title="Average carts per day of week" description="Carts per occurrence of each weekday in the date range" rows={byDay} metric="avgCarts" layout="columns" color="var(--amber)" />
-        <TopCartsTable title="Most-reacted carts" description="Top 10 by total reactions" carts={topCarts} />
-      </section>
+      <Page carts={carts} />
 
       <footer className="footer">
         Upload one or more JSON files from a Slack channel export (day files, optionally users.json). Parsing lives in src/lib/slack.ts.

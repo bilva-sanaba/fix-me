@@ -73,7 +73,7 @@ export function lastNMonths(carts: Cart[], n = 12): MonthSummary[] {
       label: monthLabel(year, month),
       totalCarts: inMonth.length,
       top3: rank(inMonth, (c) => c.createdBy).slice(0, 3),
-      restaurant: rank(inMonth, (c) => c.restaurant)[0]?.name,
+      restaurant: rank(inMonth.filter((c) => c.restaurant && !/^unknown$/i.test(c.restaurant)), (c) => c.restaurant)[0]?.name,
     });
     month -= 1;
     if (month < 0) {

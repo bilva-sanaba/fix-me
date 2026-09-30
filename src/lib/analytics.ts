@@ -122,3 +122,31 @@ export function cartsByHour(carts: Cart[]): RankedRow[] {
   }
   return rows;
 }
+
+export interface Combo {
+  createdBy: string;
+  restaurant: string;
+  /** Carts this person made from this restaurant. */
+  carts: number;
+  /** All carts this person made, for "X% of their carts". */
+  personTotal: number;
+}
+
+/** The person + restaurant pair with the most carts. Tells us who always orders from the same place. */
+export function topCombo(carts: Cart[]): Combo | undefined {
+  const pairs = new Map<string, Combo>();
+  const perPerson = new Map<string, number>();
+  for (const c of carts) {
+    perPerson.set(c.createdBy, (perPerson.get(c.createdBy) ?? 0) + 1);
+    const key = `${c.createdBy}\u0000${c.restaurant}`;
+    const row = pairs.get(key) ?? { createdBy: c.createdBy, restaurant: c.restaurant, carts: 0, personTotal: 0 };
+    row.carts += 1;
+    pairs.set(key, row);
+  }
+  let best: Combo | undefined;
+  for (const row of pairs.values()) {
+    row.personTotal = perPerson.get(row.createdBy) ?? row.carts;
+    if (!best || row.carts > best.carts || (row.carts === best.carts && row.carts / row.personTotal > best.carts / best.personTotal)) best = row;
+  }
+  return best;
+}

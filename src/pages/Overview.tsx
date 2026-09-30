@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { StatTile } from "../components/StatTile";
 import { RankedBarCard } from "../components/RankedBarCard";
 import { TopCartsTable } from "../components/TopCartsTable";
-import { cartsByCreator, cartsByDayOfWeek, cartsByRestaurant, latestMonth, summarize, topReactedCarts } from "../lib/analytics";
+import { cartsByCreator, cartsByDayOfWeek, cartsByRestaurant, latestMonth, summarize, topCombo, topReactedCarts } from "../lib/analytics";
 import type { Cart } from "../lib/types";
 
 export function OverviewPage({ carts }: { carts: Cart[] }) {
@@ -13,6 +13,7 @@ export function OverviewPage({ carts }: { carts: Cart[] }) {
   const byRestaurant = useMemo(() => cartsByRestaurant(carts), [carts]);
   const byDay = useMemo(() => cartsByDayOfWeek(carts), [carts]);
   const topCarts = useMemo(() => topReactedCarts(carts, 10), [carts]);
+  const combo = useMemo(() => topCombo(carts), [carts]);
 
   return (
     <>
@@ -30,6 +31,13 @@ export function OverviewPage({ carts }: { carts: Cart[] }) {
             value={monthly.totalReactions}
             hint={monthly.totalCarts ? `${(monthly.totalReactions / monthly.totalCarts).toFixed(1)} per cart · all time: ${allTime.totalReactions.toLocaleString()}` : `All time: ${allTime.totalReactions.toLocaleString()}`}
             accent="var(--amber)"
+          />
+          <StatTile
+            label="Top person + restaurant combo"
+            value={combo ? `${combo.createdBy} · ${combo.restaurant}` : "–"}
+            hint={combo ? `${combo.carts} carts · ${Math.round((100 * combo.carts) / combo.personTotal)}% of ${combo.createdBy}'s ${combo.personTotal} carts, all time` : undefined}
+            accent="var(--violet)"
+            compact
           />
         </div>
       </section>

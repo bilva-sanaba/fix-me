@@ -14,6 +14,10 @@ export interface Cart {
   reactionBreakdown: Record<string, number>;
   /** Link to the cart, if we found one. */
   url?: string;
+  /** Replies in the cart's Slack thread. */
+  threadReplies?: number;
+  /** Permalink to the Slack message. */
+  slackLink?: string;
   /** Raw message text, kept for debugging / future parsing. */
   text?: string;
 }

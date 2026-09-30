@@ -3,7 +3,7 @@ import cartsCsv from "../nyc_food_yum_doordash_carts_12mo.csv?raw";
 import { OverviewPage } from "./pages/Overview";
 import { TrendsPage } from "./pages/Trends";
 import { MonthlyPage } from "./pages/Monthly";
-import { EmojisPage } from "./pages/Emojis";
+import { ReactionsPage } from "./pages/Reactions";
 import { parseCartsCsv } from "./lib/csv";
 import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
@@ -29,12 +29,13 @@ const ROUTES = [
   { id: "overview", label: "Overview", Page: OverviewPage },
   { id: "trends", label: "Trends", Page: TrendsPage },
   { id: "monthly", label: "Monthly winners", Page: MonthlyPage },
-  { id: "emojis", label: "Emojis", Page: EmojisPage },
+  { id: "reactions", label: "Reactions", Page: ReactionsPage },
 ] as const;
 type RouteId = (typeof ROUTES)[number]["id"];
 
 function routeFromHash(): RouteId {
-  const id = location.hash.replace(/^#\/?/, "");
+  let id = location.hash.replace(/^#\/?/, "");
+  if (id === "emojis") id = "reactions"; // old link from before the tab was renamed
   return (ROUTES.some((r) => r.id === id) ? id : "overview") as RouteId;
 }
 

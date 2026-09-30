@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.local
+# Real Slack exports stay out of git; drop them in data/ locally
+data/*.json
+!data/README.md
+*.tsbuildinfo

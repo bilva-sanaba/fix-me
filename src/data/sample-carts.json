@@ -1,60 +1,60 @@
 [
   {
-    "id": "1782929580.100000",
+    "id": "1756750380.100000",
     "createdBy": "Jordan",
-    "createdAt": "2026-07-01T18:13:00.000Z",
+    "createdAt": "2025-09-01T18:13:00.000Z",
     "restaurant": "Chipotle",
     "reactions": 1,
     "reactionBreakdown": {
       "drooling_face": 1
     },
-    "url": "https://drd.sh/spyrtw",
+    "url": "https://drd.sh/x2pxel",
     "text": "Group order from Chipotle, closes in 20 min"
   },
   {
-    "id": "1782935460.100001",
+    "id": "1756756260.100001",
     "createdBy": "Sam",
-    "createdAt": "2026-07-01T19:51:00.000Z",
+    "createdAt": "2025-09-01T19:51:00.000Z",
     "restaurant": "Souvla",
     "reactions": 5,
     "reactionBreakdown": {
       "pizza": 4,
       "+1": 1
     },
-    "url": "https://drd.sh/8zext4",
+    "url": "https://drd.sh/rxqa8t",
     "text": "Group order from Souvla, closes in 20 min"
   },
   {
-    "id": "1783451340.100000",
-    "createdBy": "Jordan",
-    "createdAt": "2026-07-07T19:09:00.000Z",
-    "restaurant": "Pizzeria Delfina",
-    "reactions": 6,
+    "id": "1757009700.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-09-04T18:15:00.000Z",
+    "restaurant": "Gott's Roadside",
+    "reactions": 10,
     "reactionBreakdown": {
-      "+1": 1,
-      "drooling_face": 5
-    },
-    "url": "https://drd.sh/wo922h",
-    "text": "Group order from Pizzeria Delfina, closes in 20 min"
-  },
-  {
-    "id": "1783626120.100000",
-    "createdBy": "Maya",
-    "createdAt": "2026-07-09T19:42:00.000Z",
-    "restaurant": "Curry Up Now",
-    "reactions": 9,
-    "reactionBreakdown": {
+      "fire": 5,
       "drooling_face": 1,
-      "fire": 3,
-      "+1": 5
+      "+1": 4
     },
-    "url": "https://drd.sh/23kj6y",
-    "text": "Group order from Curry Up Now, closes in 20 min"
+    "url": "https://drd.sh/reca1m",
+    "text": "Group order from Gott's Roadside, closes in 20 min"
   },
   {
-    "id": "1783963200.100000",
+    "id": "1757014800.100001",
+    "createdBy": "Maya",
+    "createdAt": "2025-09-04T19:40:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "raised_hands": 5,
+      "salad": 6
+    },
+    "url": "https://drd.sh/6rtino",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1757092800.100001",
     "createdBy": "Alex",
-    "createdAt": "2026-07-13T17:20:00.000Z",
+    "createdAt": "2025-09-05T17:20:00.000Z",
     "restaurant": "Ike's Love & Sandwiches",
     "reactions": 10,
     "reactionBreakdown": {
@@ -62,532 +62,2552 @@
       "raised_hands": 3,
       "eyes": 1
     },
-    "url": "https://drd.sh/knxkbc",
+    "url": "https://drd.sh/xbfiym",
     "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
   },
   {
-    "id": "1783965300.100001",
+    "id": "1757095620.100000",
     "createdBy": "Griffin",
-    "createdAt": "2026-07-13T17:55:00.000Z",
+    "createdAt": "2025-09-05T18:07:00.000Z",
     "restaurant": "Pizzeria Delfina",
-    "reactions": 6,
+    "reactions": 5,
     "reactionBreakdown": {
-      "raised_hands": 2,
-      "+1": 4
+      "salad": 3,
+      "fire": 2
     },
-    "url": "https://drd.sh/b9hh9o",
+    "url": "https://drd.sh/ioe7l8",
     "text": "Group order from Pizzeria Delfina, closes in 20 min"
   },
   {
-    "id": "1784057340.100000",
-    "createdBy": "Priya",
-    "createdAt": "2026-07-14T19:29:00.000Z",
-    "restaurant": "Sweetgreen",
-    "reactions": 6,
-    "reactionBreakdown": {
-      "raised_hands": 6
-    },
-    "url": "https://drd.sh/trndyu",
-    "text": "Group order from Sweetgreen, closes in 20 min"
-  },
-  {
-    "id": "1784309520.100000",
-    "createdBy": "Alex",
-    "createdAt": "2026-07-17T17:32:00.000Z",
-    "restaurant": "Curry Up Now",
-    "reactions": 11,
-    "reactionBreakdown": {
-      "eyes": 5,
-      "drooling_face": 1,
-      "+1": 5
-    },
-    "url": "https://drd.sh/i1st89",
-    "text": "Group order from Curry Up Now, closes in 20 min"
-  },
-  {
-    "id": "1784315400.100001",
-    "createdBy": "Jordan",
-    "createdAt": "2026-07-17T19:10:00.000Z",
-    "restaurant": "Souvla",
-    "reactions": 6,
-    "reactionBreakdown": {
-      "drooling_face": 6
-    },
-    "url": "https://drd.sh/sufuoy",
-    "text": "Group order from Souvla, closes in 20 min"
-  },
-  {
-    "id": "1784655480.100000",
+    "id": "1757437620.100000",
     "createdBy": "Theo",
-    "createdAt": "2026-07-21T17:38:00.000Z",
-    "restaurant": "Chipotle",
-    "reactions": 8,
+    "createdAt": "2025-09-09T17:07:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 4,
     "reactionBreakdown": {
-      "fire": 4,
-      "raised_hands": 4
-    },
-    "url": "https://drd.sh/2wi9do",
-    "text": "Group order from Chipotle, closes in 20 min"
-  },
-  {
-    "id": "1784746560.100000",
-    "createdBy": "Maya",
-    "createdAt": "2026-07-22T18:56:00.000Z",
-    "restaurant": "Chipotle",
-    "reactions": 9,
-    "reactionBreakdown": {
-      "pizza": 5,
       "fire": 4
     },
-    "url": "https://drd.sh/86g1db",
-    "text": "Group order from Chipotle, closes in 20 min"
-  },
-  {
-    "id": "1785178920.100000",
-    "createdBy": "Bilva",
-    "createdAt": "2026-07-27T19:02:00.000Z",
-    "restaurant": "Chipotle",
-    "reactions": 10,
-    "reactionBreakdown": {
-      "salad": 6,
-      "+1": 4
-    },
-    "url": "https://drd.sh/c58w79",
-    "text": "Group order from Chipotle, closes in 20 min"
-  },
-  {
-    "id": "1785438180.100001",
-    "createdBy": "Maya",
-    "createdAt": "2026-07-30T19:03:00.000Z",
-    "restaurant": "Shake Shack",
-    "reactions": 11,
-    "reactionBreakdown": {
-      "fire": 5,
-      "+1": 6
-    },
-    "url": "https://drd.sh/7ke5wd",
+    "url": "https://drd.sh/262b93",
     "text": "Group order from Shake Shack, closes in 20 min"
   },
   {
-    "id": "1785439800.100000",
+    "id": "1757526060.100000",
     "createdBy": "Theo",
-    "createdAt": "2026-07-30T19:30:00.000Z",
-    "restaurant": "Sweetgreen",
-    "reactions": 16,
+    "createdAt": "2025-09-10T17:41:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 11,
     "reactionBreakdown": {
-      "salad": 10,
+      "raised_hands": 6,
+      "eyes": 1,
+      "+1": 4
+    },
+    "url": "https://drd.sh/r5oakj",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+  },
+  {
+    "id": "1757532300.100001",
+    "createdBy": "Priya",
+    "createdAt": "2025-09-10T19:25:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "+1": 1,
+      "salad": 6
+    },
+    "url": "https://drd.sh/c3vkwk",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1757611740.100000",
+    "createdBy": "Theo",
+    "createdAt": "2025-09-11T17:29:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "fire": 2,
+      "drooling_face": 2,
+      "eyes": 1
+    },
+    "url": "https://drd.sh/qgbf9c",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+  },
+  {
+    "id": "1757698500.100000",
+    "createdBy": "Sam",
+    "createdAt": "2025-09-12T17:35:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "raised_hands": 2,
+      "eyes": 3
+    },
+    "url": "https://drd.sh/iyfpt9",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1758042900.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-09-16T17:15:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "pizza": 6,
+      "raised_hands": 5
+    },
+    "url": "https://drd.sh/b2x80z",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1758307500.100000",
+    "createdBy": "Theo",
+    "createdAt": "2025-09-19T18:45:00.000Z",
+    "restaurant": "Gott's Roadside",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "raised_hands": 2
+    },
+    "url": "https://drd.sh/n0l1hr",
+    "text": "Group order from Gott's Roadside, closes in 20 min"
+  },
+  {
+    "id": "1758564120.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-09-22T18:02:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 15,
+    "reactionBreakdown": {
+      "pizza": 9,
+      "drooling_face": 6
+    },
+    "url": "https://drd.sh/pmuuft",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+  },
+  {
+    "id": "1758651240.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-09-23T18:14:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "pizza": 3
+    },
+    "url": "https://drd.sh/5mosw5",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1758824700.100001",
+    "createdBy": "Maya",
+    "createdAt": "2025-09-25T18:25:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "raised_hands": 5,
       "pizza": 6
     },
-    "url": "https://drd.sh/r2pc2z",
+    "url": "https://drd.sh/kcr240",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1758825300.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-09-25T18:35:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "+1": 2
+    },
+    "url": "https://drd.sh/mze8w0",
     "text": "Group order from Sweetgreen, closes in 20 min"
   },
   {
-    "id": "1785520860.100000",
-    "createdBy": "Bilva",
-    "createdAt": "2026-07-31T18:01:00.000Z",
-    "restaurant": "Souvla",
+    "id": "1758910560.100000",
+    "createdBy": "Maya",
+    "createdAt": "2025-09-26T18:16:00.000Z",
+    "restaurant": "Sweetgreen",
     "reactions": 3,
     "reactionBreakdown": {
       "+1": 3
     },
-    "url": "https://drd.sh/rx5wid",
-    "text": "Group order from Souvla, closes in 20 min"
+    "url": "https://drd.sh/ztogkl",
+    "text": "Group order from Sweetgreen, closes in 20 min"
   },
   {
-    "id": "1786038840.100000",
-    "createdBy": "Griffin",
-    "createdAt": "2026-08-06T17:54:00.000Z",
-    "restaurant": "Ike's Love & Sandwiches",
-    "reactions": 7,
+    "id": "1759256460.100000",
+    "createdBy": "Sam",
+    "createdAt": "2025-09-30T18:21:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 10,
     "reactionBreakdown": {
-      "raised_hands": 7
+      "salad": 5,
+      "fire": 5
     },
-    "url": "https://drd.sh/kuvpkw",
+    "url": "https://drd.sh/49inv6",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1759516860.100000",
+    "createdBy": "Sam",
+    "createdAt": "2025-10-03T18:41:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "+1": 5,
+      "fire": 3
+    },
+    "url": "https://drd.sh/dcmcab",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1759776900.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-10-06T18:55:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "salad": 6
+    },
+    "url": "https://drd.sh/rimnj0",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1759865160.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2025-10-07T19:26:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "drooling_face": 4
+    },
+    "url": "https://drd.sh/99mkuv",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1759866720.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-10-07T19:52:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 15,
+    "reactionBreakdown": {
+      "+1": 5,
+      "pizza": 4,
+      "raised_hands": 6
+    },
+    "url": "https://drd.sh/2c7sgl",
     "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
   },
   {
-    "id": "1786127160.100000",
+    "id": "1759945620.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-10-08T17:47:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "fire": 1
+    },
+    "url": "https://drd.sh/bq8ua4",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1760115960.100000",
     "createdBy": "Bilva",
-    "createdAt": "2026-08-07T18:26:00.000Z",
-    "restaurant": "Pizzeria Delfina",
-    "reactions": 5,
-    "reactionBreakdown": {
-      "salad": 2,
-      "raised_hands": 3
-    },
-    "url": "https://drd.sh/p8ffir",
-    "text": "Group order from Pizzeria Delfina, closes in 20 min"
-  },
-  {
-    "id": "1786131060.100001",
-    "createdBy": "Maya",
-    "createdAt": "2026-08-07T19:31:00.000Z",
-    "restaurant": "Pizzeria Delfina",
-    "reactions": 11,
-    "reactionBreakdown": {
-      "fire": 5,
-      "pizza": 6
-    },
-    "url": "https://drd.sh/adk6aj",
-    "text": "Group order from Pizzeria Delfina, closes in 20 min"
-  },
-  {
-    "id": "1786384140.100000",
-    "createdBy": "Maya",
-    "createdAt": "2026-08-10T17:49:00.000Z",
-    "restaurant": "Chipotle",
-    "reactions": 6,
-    "reactionBreakdown": {
-      "pizza": 5,
-      "raised_hands": 1
-    },
-    "url": "https://drd.sh/4jpyf8",
-    "text": "Group order from Chipotle, closes in 20 min"
-  },
-  {
-    "id": "1786468140.100000",
-    "createdBy": "Jordan",
-    "createdAt": "2026-08-11T17:09:00.000Z",
-    "restaurant": "Pizzeria Delfina",
-    "reactions": 12,
-    "reactionBreakdown": {
-      "salad": 1,
-      "fire": 5,
-      "pizza": 6
-    },
-    "url": "https://drd.sh/bcuqjb",
-    "text": "Group order from Pizzeria Delfina, closes in 20 min"
-  },
-  {
-    "id": "1786563420.100000",
-    "createdBy": "Theo",
-    "createdAt": "2026-08-12T19:37:00.000Z",
-    "restaurant": "Shake Shack",
-    "reactions": 13,
-    "reactionBreakdown": {
-      "salad": 5,
-      "drooling_face": 5,
-      "fire": 3
-    },
-    "url": "https://drd.sh/shigci",
-    "text": "Group order from Shake Shack, closes in 20 min"
-  },
-  {
-    "id": "1786640760.100001",
-    "createdBy": "Bilva",
-    "createdAt": "2026-08-13T17:06:00.000Z",
+    "createdAt": "2025-10-10T17:06:00.000Z",
     "restaurant": "Ike's Love & Sandwiches",
     "reactions": 4,
     "reactionBreakdown": {
       "drooling_face": 4
     },
-    "url": "https://drd.sh/aemtna",
+    "url": "https://drd.sh/jafg68",
     "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
   },
   {
-    "id": "1786644480.100000",
-    "createdBy": "Maya",
-    "createdAt": "2026-08-13T18:08:00.000Z",
-    "restaurant": "Pizzeria Delfina",
-    "reactions": 10,
-    "reactionBreakdown": {
-      "fire": 2,
-      "+1": 5,
-      "pizza": 3
-    },
-    "url": "https://drd.sh/qyekx4",
-    "text": "Group order from Pizzeria Delfina, closes in 20 min"
-  },
-  {
-    "id": "1786730100.100001",
-    "createdBy": "Griffin",
-    "createdAt": "2026-08-14T17:55:00.000Z",
-    "restaurant": "Pizzeria Delfina",
-    "reactions": 11,
-    "reactionBreakdown": {
-      "+1": 5,
-      "drooling_face": 6
-    },
-    "url": "https://drd.sh/ra9k2v",
-    "text": "Group order from Pizzeria Delfina, closes in 20 min"
-  },
-  {
-    "id": "1786730220.100000",
-    "createdBy": "Bilva",
-    "createdAt": "2026-08-14T17:57:00.000Z",
-    "restaurant": "Pizzeria Delfina",
+    "id": "1760382120.100000",
+    "createdBy": "Sam",
+    "createdAt": "2025-10-13T19:02:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
     "reactions": 2,
     "reactionBreakdown": {
-      "pizza": 2
+      "eyes": 2
     },
-    "url": "https://drd.sh/o99znx",
-    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+    "url": "https://drd.sh/ghuq7a",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
   },
   {
-    "id": "1787077800.100001",
-    "createdBy": "Theo",
-    "createdAt": "2026-08-18T18:30:00.000Z",
-    "restaurant": "Curry Up Now",
+    "id": "1760548500.100001",
+    "createdBy": "Bilva",
+    "createdAt": "2025-10-15T17:15:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "+1": 5,
+      "fire": 2,
+      "salad": 2
+    },
+    "url": "https://drd.sh/2h4g2u",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+  },
+  {
+    "id": "1760556360.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-10-15T19:26:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "raised_hands": 1
+    },
+    "url": "https://drd.sh/i2q921",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1760726520.100000",
+    "createdBy": "Alex",
+    "createdAt": "2025-10-17T18:42:00.000Z",
+    "restaurant": "Chipotle",
     "reactions": 4,
     "reactionBreakdown": {
-      "+1": 4
+      "drooling_face": 4
     },
-    "url": "https://drd.sh/me1htz",
+    "url": "https://drd.sh/w043qs",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1761066240.100001",
+    "createdBy": "Bilva",
+    "createdAt": "2025-10-21T17:04:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "raised_hands": 5,
+      "drooling_face": 5,
+      "+1": 1
+    },
+    "url": "https://drd.sh/td6w29",
     "text": "Group order from Curry Up Now, closes in 20 min"
   },
   {
-    "id": "1787082060.100000",
-    "createdBy": "Priya",
-    "createdAt": "2026-08-18T19:41:00.000Z",
-    "restaurant": "Sweetgreen",
-    "reactions": 10,
-    "reactionBreakdown": {
-      "fire": 2,
-      "salad": 2,
-      "eyes": 6
-    },
-    "url": "https://drd.sh/ab94qk",
-    "text": "Group order from Sweetgreen, closes in 20 min"
-  },
-  {
-    "id": "1787254500.100000",
-    "createdBy": "Priya",
-    "createdAt": "2026-08-20T19:35:00.000Z",
-    "restaurant": "Chipotle",
-    "reactions": 12,
-    "reactionBreakdown": {
-      "pizza": 4,
-      "raised_hands": 6,
-      "eyes": 2
-    },
-    "url": "https://drd.sh/lxi54v",
-    "text": "Group order from Chipotle, closes in 20 min"
-  },
-  {
-    "id": "1787334120.100000",
-    "createdBy": "Griffin",
-    "createdAt": "2026-08-21T17:42:00.000Z",
-    "restaurant": "Ike's Love & Sandwiches",
-    "reactions": 4,
-    "reactionBreakdown": {
-      "salad": 4
-    },
-    "url": "https://drd.sh/votaqk",
-    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
-  },
-  {
-    "id": "1787337000.100001",
-    "createdBy": "Priya",
-    "createdAt": "2026-08-21T18:30:00.000Z",
-    "restaurant": "Chipotle",
-    "reactions": 1,
-    "reactionBreakdown": {
-      "+1": 1
-    },
-    "url": "https://drd.sh/gqdpmm",
-    "text": "Group order from Chipotle, closes in 20 min"
-  },
-  {
-    "id": "1787771700.100000",
+    "id": "1761076620.100000",
     "createdBy": "Maya",
-    "createdAt": "2026-08-26T19:15:00.000Z",
+    "createdAt": "2025-10-21T19:57:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "pizza": 3,
+      "fire": 5
+    },
+    "url": "https://drd.sh/ah6dmn",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1761238920.100000",
+    "createdBy": "Maya",
+    "createdAt": "2025-10-23T17:02:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "drooling_face": 3,
+      "salad": 3
+    },
+    "url": "https://drd.sh/5y3sji",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1761246900.100001",
+    "createdBy": "Maya",
+    "createdAt": "2025-10-23T19:15:00.000Z",
     "restaurant": "Shake Shack",
     "reactions": 2,
     "reactionBreakdown": {
       "drooling_face": 2
     },
-    "url": "https://drd.sh/9wy4zz",
+    "url": "https://drd.sh/rewrh5",
     "text": "Group order from Shake Shack, closes in 20 min"
   },
   {
-    "id": "1787856360.100000",
-    "createdBy": "Maya",
-    "createdAt": "2026-08-27T18:46:00.000Z",
+    "id": "1761331560.100000",
+    "createdBy": "Theo",
+    "createdAt": "2025-10-24T18:46:00.000Z",
     "restaurant": "Poke Bowl",
     "reactions": 8,
     "reactionBreakdown": {
       "salad": 2,
       "eyes": 6
     },
-    "url": "https://drd.sh/2kv976",
+    "url": "https://drd.sh/odcto7",
     "text": "Group order from Poke Bowl, closes in 20 min"
   },
   {
-    "id": "1787939880.100000",
-    "createdBy": "Alex",
-    "createdAt": "2026-08-28T17:58:00.000Z",
-    "restaurant": "Chipotle",
-    "reactions": 5,
-    "reactionBreakdown": {
-      "raised_hands": 5
-    },
-    "url": "https://drd.sh/0uiek1",
-    "text": "Group order from Chipotle, closes in 20 min"
-  },
-  {
-    "id": "1788200460.100000",
-    "createdBy": "Priya",
-    "createdAt": "2026-08-31T18:21:00.000Z",
-    "restaurant": "Ike's Love & Sandwiches",
-    "reactions": 4,
-    "reactionBreakdown": {
-      "raised_hands": 3,
-      "fire": 1
-    },
-    "url": "https://drd.sh/t883xt",
-    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
-  },
-  {
-    "id": "1788287880.100000",
-    "createdBy": "Theo",
-    "createdAt": "2026-09-01T18:38:00.000Z",
+    "id": "1761588420.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-10-27T18:07:00.000Z",
     "restaurant": "Curry Up Now",
-    "reactions": 4,
+    "reactions": 9,
     "reactionBreakdown": {
-      "+1": 4
+      "pizza": 4,
+      "raised_hands": 2,
+      "salad": 3
     },
-    "url": "https://drd.sh/89jrme",
+    "url": "https://drd.sh/kijs00",
     "text": "Group order from Curry Up Now, closes in 20 min"
   },
   {
-    "id": "1788463020.100000",
+    "id": "1761930480.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2025-10-31T17:08:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "fire": 5,
+      "drooling_face": 4,
+      "raised_hands": 1
+    },
+    "url": "https://drd.sh/3ncurh",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1762283820.100000",
     "createdBy": "Bilva",
-    "createdAt": "2026-09-03T19:17:00.000Z",
+    "createdAt": "2025-11-04T19:17:00.000Z",
     "restaurant": "Pizzeria Delfina",
     "reactions": 2,
     "reactionBreakdown": {
       "pizza": 2
     },
-    "url": "https://drd.sh/7az8ws",
+    "url": "https://drd.sh/bupva8",
     "text": "Group order from Pizzeria Delfina, closes in 20 min"
   },
   {
-    "id": "1788549420.100000",
+    "id": "1762370220.100000",
     "createdBy": "Maya",
-    "createdAt": "2026-09-04T19:17:00.000Z",
+    "createdAt": "2025-11-05T19:17:00.000Z",
     "restaurant": "Curry Up Now",
     "reactions": 5,
     "reactionBreakdown": {
       "+1": 1,
       "pizza": 4
     },
-    "url": "https://drd.sh/tbrtcy",
+    "url": "https://drd.sh/2zz1zr",
     "text": "Group order from Curry Up Now, closes in 20 min"
   },
   {
-    "id": "1788891060.100000",
-    "createdBy": "Theo",
-    "createdAt": "2026-09-08T18:11:00.000Z",
-    "restaurant": "Cha-Ya",
-    "reactions": 3,
+    "id": "1762536300.100000",
+    "createdBy": "Alex",
+    "createdAt": "2025-11-07T17:25:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 2,
     "reactionBreakdown": {
-      "pizza": 3
+      "pizza": 2
     },
-    "url": "https://drd.sh/z56g03",
-    "text": "Group order from Cha-Ya, closes in 20 min"
+    "url": "https://drd.sh/dfcygs",
+    "text": "Group order from Souvla, closes in 20 min"
   },
   {
-    "id": "1788973440.100001",
+    "id": "1762794240.100001",
     "createdBy": "Alex",
-    "createdAt": "2026-09-09T17:04:00.000Z",
+    "createdAt": "2025-11-10T17:04:00.000Z",
     "restaurant": "Shake Shack",
     "reactions": 2,
     "reactionBreakdown": {
       "eyes": 1,
       "pizza": 1
     },
-    "url": "https://drd.sh/uaqvjz",
+    "url": "https://drd.sh/k1elql",
     "text": "Group order from Shake Shack, closes in 20 min"
   },
   {
-    "id": "1788980820.100000",
+    "id": "1762801620.100000",
     "createdBy": "Maya",
-    "createdAt": "2026-09-09T19:07:00.000Z",
-    "restaurant": "Ike's Love & Sandwiches",
+    "createdAt": "2025-11-10T19:07:00.000Z",
+    "restaurant": "Cha-Ya",
     "reactions": 9,
     "reactionBreakdown": {
       "raised_hands": 3,
       "fire": 1,
       "eyes": 5
     },
-    "url": "https://drd.sh/el6b7q",
-    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+    "url": "https://drd.sh/ddaogi",
+    "text": "Group order from Cha-Ya, closes in 20 min"
   },
   {
-    "id": "1789497660.100000",
-    "createdBy": "Jordan",
-    "createdAt": "2026-09-15T18:41:00.000Z",
-    "restaurant": "Souvla",
+    "id": "1763141580.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-11-14T17:33:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "drooling_face": 2,
+      "raised_hands": 4,
+      "pizza": 6
+    },
+    "url": "https://drd.sh/a3j3sh",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1763236320.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-11-15T19:52:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "eyes": 5,
+      "salad": 5
+    },
+    "url": "https://drd.sh/b5nbvc",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1763574660.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-11-19T17:51:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "eyes": 3,
+      "drooling_face": 6
+    },
+    "url": "https://drd.sh/o8b591",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1763660460.100001",
+    "createdBy": "Maya",
+    "createdAt": "2025-11-20T17:41:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "eyes": 9
+    },
+    "url": "https://drd.sh/9op7do",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1763662980.100000",
+    "createdBy": "Alex",
+    "createdAt": "2025-11-20T18:23:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "fire": 4
+    },
+    "url": "https://drd.sh/tfxntp",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1763751600.100000",
+    "createdBy": "Priya",
+    "createdAt": "2025-11-21T19:00:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "salad": 1
+    },
+    "url": "https://drd.sh/a28pmn",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1764090420.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-11-25T17:07:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "drooling_face": 1,
+      "pizza": 1
+    },
+    "url": "https://drd.sh/fa4xyf",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1764955620.100000",
+    "createdBy": "Maya",
+    "createdAt": "2025-12-05T17:27:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "+1": 5,
+      "salad": 1,
+      "raised_hands": 6
+    },
+    "url": "https://drd.sh/8iqzsf",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1765303140.100001",
+    "createdBy": "Maya",
+    "createdAt": "2025-12-09T17:59:00.000Z",
+    "restaurant": "Sweetgreen",
     "reactions": 4,
     "reactionBreakdown": {
       "raised_hands": 4
     },
-    "url": "https://drd.sh/mq4g3z",
+    "url": "https://drd.sh/wpuw45",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1765309740.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2025-12-09T19:49:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 13,
+    "reactionBreakdown": {
+      "salad": 5,
+      "drooling_face": 3,
+      "eyes": 5
+    },
+    "url": "https://drd.sh/5wbbd9",
     "text": "Group order from Souvla, closes in 20 min"
   },
   {
-    "id": "1789671060.100000",
-    "createdBy": "Priya",
-    "createdAt": "2026-09-17T18:51:00.000Z",
-    "restaurant": "Ike's Love & Sandwiches",
-    "reactions": 8,
+    "id": "1765474020.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-12-11T17:27:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 6,
     "reactionBreakdown": {
-      "raised_hands": 3,
-      "salad": 5
+      "salad": 3,
+      "drooling_face": 3
     },
-    "url": "https://drd.sh/adb4ry",
-    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+    "url": "https://drd.sh/9tbl5z",
+    "text": "Group order from Shake Shack, closes in 20 min"
   },
   {
-    "id": "1789672800.100001",
+    "id": "1765567560.100000",
+    "createdBy": "Maya",
+    "createdAt": "2025-12-12T19:26:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "eyes": 6,
+      "pizza": 4
+    },
+    "url": "https://drd.sh/18a4op",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1765645860.100001",
+    "createdBy": "Priya",
+    "createdAt": "2025-12-13T17:11:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "eyes": 5,
+      "pizza": 4
+    },
+    "url": "https://drd.sh/vt3jx1",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1765653300.100000",
     "createdBy": "Bilva",
-    "createdAt": "2026-09-17T19:20:00.000Z",
+    "createdAt": "2025-12-13T19:15:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "eyes": 1
+    },
+    "url": "https://drd.sh/7b70tz",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1766165460.100000",
+    "createdBy": "Maya",
+    "createdAt": "2025-12-19T17:31:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "fire": 3,
+      "salad": 2
+    },
+    "url": "https://drd.sh/4an9k9",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1766601000.100001",
+    "createdBy": "Jordan",
+    "createdAt": "2025-12-24T18:30:00.000Z",
+    "restaurant": "Gott's Roadside",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "salad": 1
+    },
+    "url": "https://drd.sh/oj4u1n",
+    "text": "Group order from Gott's Roadside, closes in 20 min"
+  },
+  {
+    "id": "1766602440.100000",
+    "createdBy": "Sam",
+    "createdAt": "2025-12-24T18:54:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "raised_hands": 2,
+      "drooling_face": 1,
+      "eyes": 5
+    },
+    "url": "https://drd.sh/iqpbry",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1766688180.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2025-12-25T18:43:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "fire": 1
+    },
+    "url": "https://drd.sh/ejdoac",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1767117000.100000",
+    "createdBy": "Theo",
+    "createdAt": "2025-12-30T17:50:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "pizza": 6
+    },
+    "url": "https://drd.sh/fb0gu9",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1767289800.100001",
+    "createdBy": "Theo",
+    "createdAt": "2026-01-01T17:50:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "+1": 10
+    },
+    "url": "https://drd.sh/k1mdom",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1767293820.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-01-01T18:57:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "pizza": 1
+    },
+    "url": "https://drd.sh/nfs27a",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1767380760.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-02T19:06:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "drooling_face": 1
+    },
+    "url": "https://drd.sh/tkzek0",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1767642060.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-01-05T19:41:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "fire": 11
+    },
+    "url": "https://drd.sh/2xirlq",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1767727320.100001",
+    "createdBy": "Theo",
+    "createdAt": "2026-01-06T19:22:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "eyes": 1
+    },
+    "url": "https://drd.sh/f1u9gg",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1767729420.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-01-06T19:57:00.000Z",
     "restaurant": "Souvla",
     "reactions": 12,
     "reactionBreakdown": {
-      "eyes": 3,
-      "fire": 6,
-      "drooling_face": 3
+      "+1": 6,
+      "pizza": 6
     },
-    "url": "https://drd.sh/m7mkf9",
+    "url": "https://drd.sh/fxq1j2",
     "text": "Group order from Souvla, closes in 20 min"
   },
   {
-    "id": "1789759260.100000",
+    "id": "1767811200.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-07T18:40:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "+1": 4,
+      "salad": 5
+    },
+    "url": "https://drd.sh/jl5mac",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1767985140.100000",
     "createdBy": "Maya",
-    "createdAt": "2026-09-18T19:21:00.000Z",
+    "createdAt": "2026-01-09T18:59:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "pizza": 2
+    },
+    "url": "https://drd.sh/rif67c",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1768238520.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-01-12T17:22:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "pizza": 2
+    },
+    "url": "https://drd.sh/20uw8k",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1768241220.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-12T18:07:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "+1": 6
+    },
+    "url": "https://drd.sh/mt90rj",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1768413120.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-01-14T17:52:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "+1": 5
+    },
+    "url": "https://drd.sh/hvh25f",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1768591080.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-16T19:18:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "+1": 3
+    },
+    "url": "https://drd.sh/oq1w1u",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1768591980.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-16T19:33:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "salad": 1,
+      "drooling_face": 5
+    },
+    "url": "https://drd.sh/ntcdvu",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1769106540.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-22T18:29:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "eyes": 2
+    },
+    "url": "https://drd.sh/55dkdh",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1769191800.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-01-23T18:10:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "raised_hands": 1,
+      "eyes": 8
+    },
+    "url": "https://drd.sh/2iaoo3",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1769534640.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-27T17:24:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "drooling_face": 6,
+      "pizza": 6
+    },
+    "url": "https://drd.sh/9l48z4",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1769539920.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-27T18:52:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "drooling_face": 4,
+      "pizza": 5
+    },
+    "url": "https://drd.sh/cfwz3w",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1769708820.100001",
+    "createdBy": "Jordan",
+    "createdAt": "2026-01-29T17:47:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "pizza": 6
+    },
+    "url": "https://drd.sh/smw81l",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1769715120.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-01-29T19:32:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "raised_hands": 3,
+      "drooling_face": 5
+    },
+    "url": "https://drd.sh/daake1",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1769796420.100000",
+    "createdBy": "Maya",
+    "createdAt": "2026-01-30T18:07:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "eyes": 6
+    },
+    "url": "https://drd.sh/9jicno",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1769799240.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-01-30T18:54:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "salad": 1,
+      "+1": 5
+    },
+    "url": "https://drd.sh/k1mztu",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1770225000.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-02-04T17:10:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "pizza": 1,
+      "raised_hands": 3
+    },
+    "url": "https://drd.sh/nd6n5k",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1770404460.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-02-06T19:01:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "pizza": 1,
+      "fire": 1
+    },
+    "url": "https://drd.sh/9bg6wm",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1770744300.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-02-10T17:25:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "raised_hands": 3,
+      "fire": 6
+    },
+    "url": "https://drd.sh/wmyzbv",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1770752220.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-02-10T19:37:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "+1": 5,
+      "fire": 6
+    },
+    "url": "https://drd.sh/raiw77",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1770830220.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-02-11T17:17:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "eyes": 6,
+      "raised_hands": 4
+    },
+    "url": "https://drd.sh/t48h1c",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1771008840.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-02-13T18:54:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "fire": 4,
+      "drooling_face": 5,
+      "pizza": 2
+    },
+    "url": "https://drd.sh/s4ghho",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1771089000.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-02-14T17:10:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "pizza": 2,
+      "drooling_face": 5,
+      "salad": 1
+    },
+    "url": "https://drd.sh/7i5wso",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1771524540.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-02-19T18:09:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "eyes": 4
+    },
+    "url": "https://drd.sh/uqnuiw",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1771612140.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-02-20T18:29:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "fire": 1,
+      "drooling_face": 5
+    },
+    "url": "https://drd.sh/5l0zjs",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1771873860.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-02-23T19:11:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "raised_hands": 6,
+      "drooling_face": 4
+    },
+    "url": "https://drd.sh/krhgkp",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1771962000.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-02-24T19:40:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "fire": 1
+    },
+    "url": "https://drd.sh/39gyfj",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1772739600.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-03-05T19:40:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "salad": 1,
+      "pizza": 4
+    },
+    "url": "https://drd.sh/e9hdnc",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1772818860.100000",
+    "createdBy": "Maya",
+    "createdAt": "2026-03-06T17:41:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "fire": 3,
+      "drooling_face": 8
+    },
+    "url": "https://drd.sh/h0q33s",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1773165180.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-03-10T17:53:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "eyes": 4,
+      "fire": 3
+    },
+    "url": "https://drd.sh/ldgpue",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1773340140.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-03-12T18:29:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "pizza": 3,
+      "salad": 5,
+      "fire": 3
+    },
+    "url": "https://drd.sh/6l1rae",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1773424260.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-03-13T17:51:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "pizza": 6,
+      "drooling_face": 5
+    },
+    "url": "https://drd.sh/ts3tdo",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1773772740.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-03-17T18:39:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "pizza": 5,
+      "raised_hands": 1,
+      "salad": 3
+    },
+    "url": "https://drd.sh/rggibx",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1774377000.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-03-24T18:30:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "fire": 5
+    },
+    "url": "https://drd.sh/j7agru",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1774460640.100001",
+    "createdBy": "Priya",
+    "createdAt": "2026-03-25T17:44:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "salad": 5,
+      "eyes": 4
+    },
+    "url": "https://drd.sh/mkpokx",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1774463640.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-03-25T18:34:00.000Z",
     "restaurant": "Shake Shack",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "raised_hands": 3,
+      "pizza": 3,
+      "eyes": 3
+    },
+    "url": "https://drd.sh/9rmovy",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1774550040.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-03-26T18:34:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "fire": 6,
+      "+1": 1
+    },
+    "url": "https://drd.sh/u0d2nl",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1774634280.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-03-27T17:58:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "fire": 5
+    },
+    "url": "https://drd.sh/v5egbf",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1774978260.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-03-31T17:31:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "fire": 3
+    },
+    "url": "https://drd.sh/4zyf5i",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1774979460.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-03-31T17:51:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "raised_hands": 2
+    },
+    "url": "https://drd.sh/h0zah4",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1775158200.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-04-02T19:30:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "fire": 2,
+      "raised_hands": 10
+    },
+    "url": "https://drd.sh/v0g7lw",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1775245980.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-04-03T19:53:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "eyes": 3
+    },
+    "url": "https://drd.sh/cf203l",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1775324280.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-04-04T17:38:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "salad": 2
+    },
+    "url": "https://drd.sh/upmsm1",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1775501040.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-04-06T18:44:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "salad": 3
+    },
+    "url": "https://drd.sh/ldhcwz",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1775668020.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-04-08T17:07:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "salad": 6
+    },
+    "url": "https://drd.sh/73522f",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+  },
+  {
+    "id": "1775671560.100001",
+    "createdBy": "Maya",
+    "createdAt": "2026-04-08T18:06:00.000Z",
+    "restaurant": "Gott's Roadside",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "raised_hands": 5,
+      "pizza": 4
+    },
+    "url": "https://drd.sh/kmaquf",
+    "text": "Group order from Gott's Roadside, closes in 20 min"
+  },
+  {
+    "id": "1775848260.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-04-10T19:11:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "pizza": 6,
+      "raised_hands": 3,
+      "eyes": 1
+    },
+    "url": "https://drd.sh/njffs2",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1776282840.100000",
+    "createdBy": "Maya",
+    "createdAt": "2026-04-15T19:54:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "pizza": 2
+    },
+    "url": "https://drd.sh/6tosw9",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1776363120.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-04-16T18:12:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "+1": 6
+    },
+    "url": "https://drd.sh/5p7v8y",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1776886620.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-04-22T19:37:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "pizza": 6,
+      "+1": 1
+    },
+    "url": "https://drd.sh/51mfnd",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1776968460.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-04-23T18:21:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 14,
+    "reactionBreakdown": {
+      "drooling_face": 5,
+      "raised_hands": 4,
+      "eyes": 5
+    },
+    "url": "https://drd.sh/fmsak0",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1777056960.100000",
+    "createdBy": "Maya",
+    "createdAt": "2026-04-24T18:56:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 13,
+    "reactionBreakdown": {
+      "salad": 5,
+      "fire": 2,
+      "eyes": 6
+    },
+    "url": "https://drd.sh/lsfmlb",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1777396620.100001",
+    "createdBy": "Priya",
+    "createdAt": "2026-04-28T17:17:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "drooling_face": 3,
+      "eyes": 3
+    },
+    "url": "https://drd.sh/9eox59",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1777404300.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-04-28T19:25:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "+1": 3,
+      "raised_hands": 3
+    },
+    "url": "https://drd.sh/s4i3bp",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1777575960.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-04-30T19:06:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "raised_hands": 7,
+      "eyes": 2
+    },
+    "url": "https://drd.sh/ig9dau",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1777577940.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-04-30T19:39:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "salad": 3,
+      "fire": 3
+    },
+    "url": "https://drd.sh/hb1jbh",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1777659480.100000",
+    "createdBy": "Maya",
+    "createdAt": "2026-05-01T18:18:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "+1": 1,
+      "pizza": 5
+    },
+    "url": "https://drd.sh/nudhl4",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1778007300.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-05-05T18:55:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "raised_hands": 2,
+      "+1": 8
+    },
+    "url": "https://drd.sh/beodke",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1778096880.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-05-06T19:48:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "eyes": 6
+    },
+    "url": "https://drd.sh/48wu75",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1778174820.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-05-07T17:27:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 15,
+    "reactionBreakdown": {
+      "pizza": 15
+    },
+    "url": "https://drd.sh/anmpo2",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1778259900.100001",
+    "createdBy": "Priya",
+    "createdAt": "2026-05-08T17:05:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "+1": 6,
+      "eyes": 5,
+      "salad": 1
+    },
+    "url": "https://drd.sh/uvk81x",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1778268420.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-05-08T19:27:00.000Z",
+    "restaurant": "Gott's Roadside",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "eyes": 2,
+      "salad": 5
+    },
+    "url": "https://drd.sh/wq96mz",
+    "text": "Group order from Gott's Roadside, closes in 20 min"
+  },
+  {
+    "id": "1778525220.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-05-11T18:47:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "eyes": 2,
+      "+1": 2,
+      "fire": 5
+    },
+    "url": "https://drd.sh/aeyc5s",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1778606820.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-05-12T17:27:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "pizza": 6
+    },
+    "url": "https://drd.sh/huby8t",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1778868360.100001",
+    "createdBy": "Priya",
+    "createdAt": "2026-05-15T18:06:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "raised_hands": 1
+    },
+    "url": "https://drd.sh/o7mvvn",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1778872440.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-05-15T19:14:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "salad": 3,
+      "pizza": 3
+    },
+    "url": "https://drd.sh/3c7yah",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1779124140.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-05-18T17:09:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "+1": 5
+    },
+    "url": "https://drd.sh/2dz15x",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1779212640.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-05-19T17:44:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "+1": 3,
+      "salad": 2
+    },
+    "url": "https://drd.sh/209ab9",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1779299280.100001",
+    "createdBy": "Bilva",
+    "createdAt": "2026-05-20T17:48:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "eyes": 6
+    },
+    "url": "https://drd.sh/7ky82r",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1779304740.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-05-20T19:19:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "+1": 2
+    },
+    "url": "https://drd.sh/qxgvcm",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1779384480.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-05-21T17:28:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "fire": 1
+    },
+    "url": "https://drd.sh/cchgfy",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1779474060.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-05-22T18:21:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "raised_hands": 7,
+      "drooling_face": 4
+    },
+    "url": "https://drd.sh/p4ryg6",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1779558000.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-05-23T17:40:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "salad": 4
+    },
+    "url": "https://drd.sh/wm3p2u",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1779733800.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-05-25T18:30:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "salad": 2,
+      "fire": 1,
+      "+1": 5
+    },
+    "url": "https://drd.sh/v349xf",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1779739140.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-05-25T19:59:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "fire": 6,
+      "eyes": 5
+    },
+    "url": "https://drd.sh/qlc7ka",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1779821880.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-05-26T18:58:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "pizza": 4
+    },
+    "url": "https://drd.sh/n04tul",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1779901440.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-05-27T17:04:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "raised_hands": 11
+    },
+    "url": "https://drd.sh/2n051y",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1779989340.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-05-28T17:29:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "salad": 6,
+      "+1": 6
+    },
+    "url": "https://drd.sh/m2nm4o",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1780081020.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-05-29T18:57:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "fire": 3
+    },
+    "url": "https://drd.sh/424sc4",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1780430340.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-06-02T19:59:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "salad": 4
+    },
+    "url": "https://drd.sh/exbc2i",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1780686780.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-06-05T19:13:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "fire": 2,
+      "drooling_face": 6
+    },
+    "url": "https://drd.sh/t9vzll",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1780942740.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-06-08T18:19:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "+1": 6,
+      "raised_hands": 2
+    },
+    "url": "https://drd.sh/0dy8o5",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1781028300.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-06-09T18:05:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "+1": 2,
+      "fire": 1,
+      "pizza": 2
+    },
+    "url": "https://drd.sh/0dvhx3",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1781120460.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-06-10T19:41:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "drooling_face": 1,
+      "fire": 4
+    },
+    "url": "https://drd.sh/n8lmyh",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1781203440.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-06-11T18:44:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "eyes": 1
+    },
+    "url": "https://drd.sh/w5fc3e",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1781288400.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-06-12T18:20:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "+1": 4,
+      "eyes": 3
+    },
+    "url": "https://drd.sh/gf9bkr",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1781639400.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-06-16T19:50:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "eyes": 5,
+      "raised_hands": 5
+    },
+    "url": "https://drd.sh/7scp0m",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1781809560.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-06-18T19:06:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "pizza": 3,
+      "drooling_face": 1,
+      "fire": 1
+    },
+    "url": "https://drd.sh/2dzxyt",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1781889540.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-06-19T17:19:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "+1": 2
+    },
+    "url": "https://drd.sh/eyu0ca",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1782151140.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-06-22T17:59:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 13,
+    "reactionBreakdown": {
+      "raised_hands": 4,
+      "fire": 5,
+      "+1": 4
+    },
+    "url": "https://drd.sh/g6cv4b",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1782152100.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-06-22T18:15:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "fire": 1
+    },
+    "url": "https://drd.sh/9et1mn",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1782239760.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-06-23T18:36:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 14,
+    "reactionBreakdown": {
+      "eyes": 6,
+      "pizza": 6,
+      "+1": 2
+    },
+    "url": "https://drd.sh/sbmcoa",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1782243600.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-06-23T19:40:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "pizza": 4
+    },
+    "url": "https://drd.sh/w2ymju",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1782328980.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-06-24T19:23:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "drooling_face": 3,
+      "raised_hands": 2
+    },
+    "url": "https://drd.sh/0myqdw",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1782409680.100000",
+    "createdBy": "Bilva",
+    "createdAt": "2026-06-25T17:48:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "+1": 5,
+      "salad": 1
+    },
+    "url": "https://drd.sh/bzle1f",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1782497220.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-06-26T18:07:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 14,
+    "reactionBreakdown": {
+      "salad": 5,
+      "pizza": 4,
+      "fire": 5
+    },
+    "url": "https://drd.sh/tpiig1",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1782932640.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-07-01T19:04:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "drooling_face": 6
+    },
+    "url": "https://drd.sh/zn9f9c",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+  },
+  {
+    "id": "1782933060.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-07-01T19:11:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "raised_hands": 1,
+      "pizza": 6
+    },
+    "url": "https://drd.sh/o09zab",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1783098480.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-07-03T17:08:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "salad": 5
+    },
+    "url": "https://drd.sh/kwagse",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1783445520.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-07-07T17:32:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "raised_hands": 5
+    },
+    "url": "https://drd.sh/553l0x",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1783623660.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-07-09T19:01:00.000Z",
+    "restaurant": "Souvla",
     "reactions": 3,
     "reactionBreakdown": {
       "raised_hands": 3
     },
-    "url": "https://drd.sh/qaojp5",
-    "text": "Group order from Shake Shack, closes in 20 min"
-  },
-  {
-    "id": "1790192160.100000",
-    "createdBy": "Maya",
-    "createdAt": "2026-09-23T19:36:00.000Z",
-    "restaurant": "Souvla",
-    "reactions": 7,
-    "reactionBreakdown": {
-      "eyes": 5,
-      "drooling_face": 2
-    },
-    "url": "https://drd.sh/guitsf",
+    "url": "https://drd.sh/s8jqgu",
     "text": "Group order from Souvla, closes in 20 min"
   },
   {
-    "id": "1790358180.100000",
+    "id": "1783625160.100001",
+    "createdBy": "Priya",
+    "createdAt": "2026-07-09T19:26:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 17,
+    "reactionBreakdown": {
+      "eyes": 6,
+      "drooling_face": 5,
+      "raised_hands": 6
+    },
+    "url": "https://drd.sh/ohyfdj",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1783703700.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-07-10T17:15:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "pizza": 2,
+      "raised_hands": 2,
+      "drooling_face": 1
+    },
+    "url": "https://drd.sh/5976jy",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1783711860.100000",
+    "createdBy": "Maya",
+    "createdAt": "2026-07-10T19:31:00.000Z",
+    "restaurant": "Gott's Roadside",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "raised_hands": 3,
+      "eyes": 6,
+      "+1": 1
+    },
+    "url": "https://drd.sh/xlhlph",
+    "text": "Group order from Gott's Roadside, closes in 20 min"
+  },
+  {
+    "id": "1783966080.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-07-13T18:08:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "eyes": 4,
+      "+1": 2,
+      "raised_hands": 1
+    },
+    "url": "https://drd.sh/x8x4pu",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1784144340.100000",
     "createdBy": "Griffin",
-    "createdAt": "2026-09-25T17:43:00.000Z",
+    "createdAt": "2026-07-15T19:39:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "fire": 6
+    },
+    "url": "https://drd.sh/23pidt",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1784144520.100001",
+    "createdBy": "Priya",
+    "createdAt": "2026-07-15T19:42:00.000Z",
+    "restaurant": "Ike's Love & Sandwiches",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "eyes": 3
+    },
+    "url": "https://drd.sh/g87y17",
+    "text": "Group order from Ike's Love & Sandwiches, closes in 20 min"
+  },
+  {
+    "id": "1784231520.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-07-16T19:52:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "pizza": 1
+    },
+    "url": "https://drd.sh/tipwp2",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1784313900.100001",
+    "createdBy": "Sam",
+    "createdAt": "2026-07-17T18:45:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 14,
+    "reactionBreakdown": {
+      "raised_hands": 4,
+      "salad": 6,
+      "drooling_face": 4
+    },
+    "url": "https://drd.sh/1gqpe4",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1784316240.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-07-17T19:24:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "fire": 4,
+      "drooling_face": 2
+    },
+    "url": "https://drd.sh/dahttv",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1784748900.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-07-22T19:35:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 3,
+    "reactionBreakdown": {
+      "+1": 3
+    },
+    "url": "https://drd.sh/9r281g",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1784920860.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-07-24T19:21:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "raised_hands": 2
+    },
+    "url": "https://drd.sh/scqsrh",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1785172980.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-07-27T17:23:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "pizza": 4,
+      "fire": 5
+    },
+    "url": "https://drd.sh/dcwlh1",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1785267900.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-07-28T19:45:00.000Z",
     "restaurant": "Sweetgreen",
     "reactions": 6,
     "reactionBreakdown": {
-      "pizza": 4,
-      "salad": 2
+      "salad": 6
     },
-    "url": "https://drd.sh/piia02",
+    "url": "https://drd.sh/cf686w",
     "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1785781440.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-08-03T18:24:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "fire": 5,
+      "salad": 3
+    },
+    "url": "https://drd.sh/z3duxa",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1785864540.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-08-04T17:29:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "raised_hands": 5
+    },
+    "url": "https://drd.sh/qn3rxg",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1786039440.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-08-06T18:04:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "fire": 3,
+      "eyes": 4
+    },
+    "url": "https://drd.sh/wdl2jn",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1786130520.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-08-07T19:22:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "+1": 4
+    },
+    "url": "https://drd.sh/0xal8n",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1786558920.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-08-12T18:22:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "pizza": 3,
+      "drooling_face": 3,
+      "+1": 6
+    },
+    "url": "https://drd.sh/l4izz6",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1786649940.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-08-13T19:39:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "raised_hands": 4,
+      "drooling_face": 1,
+      "eyes": 2
+    },
+    "url": "https://drd.sh/g1lyvv",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1786728960.100000",
+    "createdBy": "Theo",
+    "createdAt": "2026-08-14T17:36:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "raised_hands": 5
+    },
+    "url": "https://drd.sh/5f0d7z",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1786986300.100000",
+    "createdBy": "Priya",
+    "createdAt": "2026-08-17T17:05:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "salad": 5
+    },
+    "url": "https://drd.sh/zkx91z",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1787159340.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-08-19T17:09:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "fire": 6,
+      "+1": 3
+    },
+    "url": "https://drd.sh/ni0xao",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1787163840.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-08-19T18:24:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 1,
+    "reactionBreakdown": {
+      "fire": 1
+    },
+    "url": "https://drd.sh/yzbvup",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1787336820.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-08-21T18:27:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 12,
+    "reactionBreakdown": {
+      "drooling_face": 2,
+      "+1": 6,
+      "eyes": 4
+    },
+    "url": "https://drd.sh/x6bcmp",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1788198480.100000",
+    "createdBy": "Alex",
+    "createdAt": "2026-08-31T17:48:00.000Z",
+    "restaurant": "Pizzeria Delfina",
+    "reactions": 15,
+    "reactionBreakdown": {
+      "drooling_face": 3,
+      "eyes": 6,
+      "pizza": 6
+    },
+    "url": "https://drd.sh/2j1kb1",
+    "text": "Group order from Pizzeria Delfina, closes in 20 min"
+  },
+  {
+    "id": "1788290880.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-09-01T19:28:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "drooling_face": 2,
+      "salad": 3,
+      "fire": 5
+    },
+    "url": "https://drd.sh/07l7bs",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1788544740.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-04T17:59:00.000Z",
+    "restaurant": "Cha-Ya",
+    "reactions": 8,
+    "reactionBreakdown": {
+      "pizza": 5,
+      "salad": 3
+    },
+    "url": "https://drd.sh/10irno",
+    "text": "Group order from Cha-Ya, closes in 20 min"
+  },
+  {
+    "id": "1788803640.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-07T17:54:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 10,
+    "reactionBreakdown": {
+      "fire": 10
+    },
+    "url": "https://drd.sh/7tga7a",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1788811140.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-07T19:59:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 5,
+    "reactionBreakdown": {
+      "fire": 5
+    },
+    "url": "https://drd.sh/05lv8e",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1789063860.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-10T18:11:00.000Z",
+    "restaurant": "Shake Shack",
+    "reactions": 13,
+    "reactionBreakdown": {
+      "drooling_face": 2,
+      "raised_hands": 6,
+      "salad": 5
+    },
+    "url": "https://drd.sh/4vd0nr",
+    "text": "Group order from Shake Shack, closes in 20 min"
+  },
+  {
+    "id": "1789150980.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-11T18:23:00.000Z",
+    "restaurant": "Poke Bowl",
+    "reactions": 9,
+    "reactionBreakdown": {
+      "fire": 5,
+      "raised_hands": 4
+    },
+    "url": "https://drd.sh/ujw8pc",
+    "text": "Group order from Poke Bowl, closes in 20 min"
+  },
+  {
+    "id": "1789412700.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-14T19:05:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 13,
+    "reactionBreakdown": {
+      "pizza": 3,
+      "salad": 6,
+      "drooling_face": 4
+    },
+    "url": "https://drd.sh/4mitoy",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1789492620.100000",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-15T17:17:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "salad": 1,
+      "fire": 1,
+      "raised_hands": 5
+    },
+    "url": "https://drd.sh/cadk7y",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1790020500.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-09-21T19:55:00.000Z",
+    "restaurant": "Sweetgreen",
+    "reactions": 2,
+    "reactionBreakdown": {
+      "fire": 1,
+      "salad": 1
+    },
+    "url": "https://drd.sh/7vs2lu",
+    "text": "Group order from Sweetgreen, closes in 20 min"
+  },
+  {
+    "id": "1790103480.100000",
+    "createdBy": "Jordan",
+    "createdAt": "2026-09-22T18:58:00.000Z",
+    "restaurant": "Chipotle",
+    "reactions": 7,
+    "reactionBreakdown": {
+      "eyes": 3,
+      "salad": 4
+    },
+    "url": "https://drd.sh/qp056w",
+    "text": "Group order from Chipotle, closes in 20 min"
+  },
+  {
+    "id": "1790185020.100001",
+    "createdBy": "Griffin",
+    "createdAt": "2026-09-23T17:37:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 6,
+    "reactionBreakdown": {
+      "eyes": 6
+    },
+    "url": "https://drd.sh/5o1qm1",
+    "text": "Group order from Souvla, closes in 20 min"
+  },
+  {
+    "id": "1790192640.100000",
+    "createdBy": "Sam",
+    "createdAt": "2026-09-23T19:44:00.000Z",
+    "restaurant": "Curry Up Now",
+    "reactions": 4,
+    "reactionBreakdown": {
+      "eyes": 4
+    },
+    "url": "https://drd.sh/mxwa26",
+    "text": "Group order from Curry Up Now, closes in 20 min"
+  },
+  {
+    "id": "1790362500.100000",
+    "createdBy": "Maya",
+    "createdAt": "2026-09-25T18:55:00.000Z",
+    "restaurant": "Souvla",
+    "reactions": 11,
+    "reactionBreakdown": {
+      "raised_hands": 4,
+      "eyes": 6,
+      "+1": 1
+    },
+    "url": "https://drd.sh/mcyy2d",
+    "text": "Group order from Souvla, closes in 20 min"
   }
 ]

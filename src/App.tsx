@@ -1,15 +1,41 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import cartsCsv from "../nyc_food_yum_doordash_carts.csv?raw";
-import { StatTile } from "./components/StatTile";
-import { RankedBarCard } from "./components/RankedBarCard";
-import { TopCartsTable } from "./components/TopCartsTable";
 import { UploadButton } from "./components/UploadButton";
+import { OverviewPage } from "./pages/Overview";
+import { TrendsPage } from "./pages/Trends";
+import { MonthlyPage } from "./pages/Monthly";
 import { parseCartsCsv } from "./lib/csv";
-import { cartsByCreator, cartsByDayOfWeek, cartsByRestaurant, summarize, topReactedCarts } from "./lib/analytics";
+import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
 
 const DEFAULT_CARTS = parseCartsCsv(cartsCsv);
 const DEFAULT_SOURCE = "nyc_food_yum_doordash_carts.csv";
+
+type Theme = "dark" | "light";
+const THEME_KEY = "dd-theme";
+
+function initialTheme(): Theme {
+  try {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === "dark" || saved === "light") return saved;
+  } catch {
+    /* private mode etc. */
+  }
+  return "dark";
+}
+
+/** Hash-based routes so the app stays a single static page. */
+const ROUTES = [
+  { id: "overview", label: "Overview", Page: OverviewPage },
+  { id: "trends", label: "Trends", Page: TrendsPage },
+  { id: "monthly", label: "Monthly winners", Page: MonthlyPage },
+] as const;
+type RouteId = (typeof ROUTES)[number]["id"];
+
+function routeFromHash(): RouteId {
+  const id = location.hash.replace(/^#\/?/, "");
+  return (ROUTES.some((r) => r.id === id) ? id : "overview") as RouteId;
+}
 
 const fmtDay = (iso: string) => new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
@@ -17,12 +43,26 @@ export default function App() {
   const [carts, setCarts] = useState<Cart[]>(DEFAULT_CARTS);
   const [source, setSource] = useState(DEFAULT_SOURCE);
   const [error, setError] = useState<string | null>(null);
+  const [theme, setTheme] = useState<Theme>(initialTheme);
+  const [route, setRoute] = useState<RouteId>(routeFromHash);
 
-  const summary = useMemo(() => summarize(carts), [carts]);
-  const byCreator = useMemo(() => cartsByCreator(carts), [carts]);
-  const byRestaurant = useMemo(() => cartsByRestaurant(carts), [carts]);
-  const byDay = useMemo(() => cartsByDayOfWeek(carts), [carts]);
-  const topCarts = useMemo(() => topReactedCarts(carts, 10), [carts]);
+  useEffect(() => {
+    const onHash = () => setRoute(routeFromHash());
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch {
+      /* ignore */
+    }
+  }, [theme]);
+
+  const range = useMemo(() => summarize(carts).range, [carts]);
+  const Page = ROUTES.find((r) => r.id === route)!.Page;
 
   return (
     <div className="app">
@@ -31,10 +71,18 @@ export default function App() {
           <h1>DoorDash Cart Analytics</h1>
           <div className="sub">
             Source: {source}
-            {summary.range && ` · ${fmtDay(summary.range.from)} – ${fmtDay(summary.range.to)}`}
+            {range && ` · ${fmtDay(range.from)} – ${fmtDay(range.to)}`}
           </div>
         </div>
         <div className="actions">
+          <button
+            className="btn icon"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            title={theme === "dark" ? "Light mode" : "Dark mode"}
+          >
+            {theme === "dark" ? "☀" : "☾"}
+          </button>
           {source !== DEFAULT_SOURCE && (
             <button className="btn secondary" onClick={() => { setCarts(DEFAULT_CARTS); setSource(DEFAULT_SOURCE); setError(null); }}>
               Reset to default CSV
@@ -47,25 +95,15 @@ export default function App() {
         </div>
       </header>
 
+      <nav className="tabs" aria-label="Pages">
+        {ROUTES.map((r) => (
+          <a key={r.id} href={`#/${r.id}`} aria-current={route === r.id ? "page" : undefined}>{r.label}</a>
+        ))}
+      </nav>
+
       {error && <div className="error">Couldn't load that file: {error}</div>}
 
-      <section className="tiles">
-        <StatTile label="Carts" value={summary.totalCarts} />
-        <StatTile label="Cart makers" value={summary.uniqueCreators} />
-        <StatTile label="Restaurants" value={summary.uniqueRestaurants} />
-        <StatTile
-          label="Reactions"
-          value={summary.totalReactions}
-          hint={summary.totalCarts ? `${(summary.totalReactions / summary.totalCarts).toFixed(1)} per cart` : undefined}
-        />
-      </section>
-
-      <section className="grid">
-        <RankedBarCard title="Who makes the most carts" description="Carts posted per person" rows={byCreator} />
-        <RankedBarCard title="Most-carted restaurants" description="Carts per restaurant" rows={byRestaurant} />
-        <RankedBarCard title="Carts by day of week" description="When carts get posted" rows={byDay} layout="columns" />
-        <TopCartsTable title="Most-reacted carts" description="Top 10 by total reactions" carts={topCarts} />
-      </section>
+      <Page carts={carts} />
 
       <footer className="footer">
         Loads nyc_food_yum_doordash_carts.csv by default. You can also upload a cart CSV, or JSON files from a Slack channel export (day files, optionally users.json). Parsing lives in src/lib/csv.ts and src/lib/slack.ts.

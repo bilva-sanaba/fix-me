@@ -4,6 +4,10 @@ export interface RankedRow {
   name: string;
   carts: number;
   reactions: number;
+  /** Weekday rows only: how many of that weekday fall inside the data's date range. */
+  occurrences?: number;
+  /** Weekday rows only: carts / occurrences. */
+  avgCarts?: number;
 }
 
 export interface Summary {
@@ -24,6 +28,26 @@ export function summarize(carts: Cart[]): Summary {
     totalReactions: carts.reduce((n, c) => n + c.reactions, 0),
     range: sorted.length ? { from: sorted[0].createdAt, to: sorted[sorted.length - 1].createdAt } : undefined,
   };
+}
+
+export interface MonthSlice {
+  /** e.g. "September 2026" */
+  label: string;
+  carts: Cart[];
+}
+
+/** The carts from the calendar month of the most recent cart (viewer's local time). */
+export function latestMonth(carts: Cart[]): MonthSlice | undefined {
+  if (carts.length === 0) return undefined;
+  const newest = carts.reduce((a, b) => (a.createdAt > b.createdAt ? a : b));
+  const d = new Date(newest.createdAt);
+  const year = d.getFullYear();
+  const month = d.getMonth();
+  const inMonth = carts.filter((c) => {
+    const x = new Date(c.createdAt);
+    return x.getFullYear() === year && x.getMonth() === month;
+  });
+  return { label: d.toLocaleDateString(undefined, { month: "long", year: "numeric" }), carts: inMonth };
 }
 
 function rankBy(carts: Cart[], key: (c: Cart) => string): RankedRow[] {
@@ -55,15 +79,36 @@ export function topReactedCarts(carts: Cart[], limit = 10): Cart[] {
 
 export const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const;
 
-/** Carts and reactions per weekday, Monday first, in the viewer's local time zone. */
+const weekdayIndex = (d: Date) => (d.getDay() + 6) % 7; // Monday = 0
+
+/**
+ * Carts and reactions per weekday, Monday first, in the viewer's local time zone.
+ * Also computes the average carts per weekday: total carts on that weekday divided by
+ * how many times that weekday occurs between the first and last cart (inclusive).
+ */
 export function cartsByDayOfWeek(carts: Cart[]): RankedRow[] {
-  const rows: RankedRow[] = DAYS.map((name) => ({ name, carts: 0, reactions: 0 }));
+  const rows: RankedRow[] = DAYS.map((name) => ({ name, carts: 0, reactions: 0, occurrences: 0, avgCarts: 0 }));
+  if (carts.length === 0) return rows;
+
+  let first = Infinity;
+  let last = -Infinity;
   for (const c of carts) {
-    const jsDay = new Date(c.createdAt).getDay(); // 0 = Sun
-    const row = rows[(jsDay + 6) % 7];
+    const d = new Date(c.createdAt);
+    first = Math.min(first, d.getTime());
+    last = Math.max(last, d.getTime());
+    const row = rows[weekdayIndex(d)];
     row.carts += 1;
     row.reactions += c.reactions;
   }
+
+  const cursor = new Date(first);
+  cursor.setHours(0, 0, 0, 0);
+  const end = new Date(last);
+  end.setHours(0, 0, 0, 0);
+  for (; cursor <= end; cursor.setDate(cursor.getDate() + 1)) {
+    rows[weekdayIndex(cursor)].occurrences! += 1;
+  }
+  for (const r of rows) r.avgCarts = r.occurrences ? r.carts / r.occurrences : 0;
   return rows;
 }
 

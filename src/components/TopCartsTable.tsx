@@ -17,7 +17,7 @@ const fmtBreakdown = (b: Record<string, number>) =>
 
 export function TopCartsTable({ title, description, carts }: Props) {
   return (
-    <div className="card wide">
+    <div className="card wide" style={{ "--card-accent": "var(--coral)" } as React.CSSProperties}>
       <div className="card-head">
         <div>
           <h2>{title}</h2>

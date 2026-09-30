@@ -4,10 +4,10 @@ import type { Cart } from "../lib/types";
 
 const ALL = "all";
 
-/** Month selection for a page: defaults to the latest month, with an "All time" option. */
-export function useMonthScope(carts: Cart[]) {
+/** Month selection for a page: defaults to the latest month (or all time), with an "All time" option. */
+export function useMonthScope(carts: Cart[], initial: "latest" | "all" = "latest") {
   const months = useMemo(() => monthsIn(carts), [carts]);
-  const [selected, setSelected] = useState<string>(() => months[0]?.key ?? ALL);
+  const [selected, setSelected] = useState<string>(() => (initial === "all" ? ALL : months[0]?.key ?? ALL));
   const isAll = selected === ALL;
   const label = isAll ? "All time" : months.find((m) => m.key === selected)?.label ?? selected;
   const scoped = useMemo(() => (isAll ? carts : cartsInMonth(carts, selected)), [carts, selected, isAll]);

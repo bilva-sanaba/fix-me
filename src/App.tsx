@@ -5,6 +5,7 @@ import { TrendsPage } from "./pages/Trends";
 import { MonthlyPage } from "./pages/Monthly";
 import { ReactionsPage } from "./pages/Reactions";
 import { VarietyPage } from "./pages/Variety";
+import { PeoplePage } from "./pages/People";
 import { parseCartsCsv } from "./lib/csv";
 import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
@@ -32,11 +33,13 @@ const ROUTES = [
   { id: "monthly", label: "Monthly winners", Page: MonthlyPage },
   { id: "reactions", label: "Reactions", Page: ReactionsPage },
   { id: "variety", label: "Variety", Page: VarietyPage },
+  { id: "people", label: "People", Page: PeoplePage },
 ] as const;
 type RouteId = (typeof ROUTES)[number]["id"];
 
 function routeFromHash(): RouteId {
-  let id = location.hash.replace(/^#\/?/, "");
+  // Pages may carry their own state after a "?", e.g. #/people?name=Sam
+  let id = location.hash.replace(/^#\/?/, "").split("?")[0];
   if (id === "emojis") id = "reactions"; // old link from before the tab was renamed
   return (ROUTES.some((r) => r.id === id) ? id : "overview") as RouteId;
 }

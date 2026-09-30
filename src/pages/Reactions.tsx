@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { MonthPicker, useMonthScope } from "../components/MonthPicker";
 import { StatTile } from "../components/StatTile";
 import { RankedBarCard } from "../components/RankedBarCard";
 import { emojiLabel, emojiSummary, emojiUsage, rankByReactions, signatureEmojis } from "../lib/emoji";
@@ -16,15 +17,17 @@ const fmtBreakdown = (b: Record<string, number>) =>
 
 /** Which emojis people react to carts with, whose carts collect them, and which carts start arguments. */
 export function ReactionsPage({ carts }: { carts: Cart[] }) {
-  const summary = useMemo(() => emojiSummary(carts), [carts]);
-  const usage = useMemo(() => emojiUsage(carts), [carts]);
-  const byPerson = useMemo(() => rankByReactions(carts, (c) => c.createdBy), [carts]);
-  const known = useMemo(() => carts.filter((c) => !isUnknownRestaurant(c)), [carts]);
+  const scope = useMonthScope(carts);
+  const { label, scoped, scopeNote } = scope;
+  const summary = useMemo(() => emojiSummary(scoped), [scoped]);
+  const usage = useMemo(() => emojiUsage(scoped), [scoped]);
+  const byPerson = useMemo(() => rankByReactions(scoped, (c) => c.createdBy), [scoped]);
+  const known = useMemo(() => scoped.filter((c) => !isUnknownRestaurant(c)), [scoped]);
   const byRestaurant = useMemo(() => rankByReactions(known, (c) => c.restaurant), [known]);
-  const signatures = useMemo(() => signatureEmojis(carts), [carts]);
-  const debate = useMemo(() => controversySummary(carts), [carts]);
-  const controversial = useMemo(() => mostControversial(carts, 10), [carts]);
-  const repliesByPerson = useMemo(() => rankByReplies(carts, (c) => c.createdBy), [carts]);
+  const signatures = useMemo(() => signatureEmojis(scoped), [scoped]);
+  const debate = useMemo(() => controversySummary(scoped), [scoped]);
+  const controversial = useMemo(() => mostControversial(scoped, 10), [scoped]);
+  const repliesByPerson = useMemo(() => rankByReplies(scoped, (c) => c.createdBy), [scoped]);
   const repliesByRestaurant = useMemo(() => rankByReplies(known, (c) => c.restaurant), [known]);
   const pct = summary.totalCarts ? Math.round((summary.cartsWithReactions / summary.totalCarts) * 100) : 0;
 
@@ -33,7 +36,7 @@ export function ReactionsPage({ carts }: { carts: Cart[] }) {
       <section>
         <div className="section-head">
           <h2>Emoji reactions</h2>
-          <span className="pill">All time</span>
+          <MonthPicker scope={scope} />
         </div>
         <div className="tiles">
           <StatTile label="Emoji reactions" value={summary.totalReactions} hint={summary.totalCarts ? `${(summary.totalReactions / summary.totalCarts).toFixed(1)} per cart` : undefined} accent="var(--amber)" />
@@ -44,19 +47,19 @@ export function ReactionsPage({ carts }: { carts: Cart[] }) {
       </section>
 
       <section className="grid">
-        <RankedBarCard title="Most-used emojis" description="Total uses per emoji · table shows how many carts each appeared on" rows={usage} metric="reactions" color="var(--amber)" />
-        <RankedBarCard title="Whose carts get the most reactions" description="Total emoji reactions on each person's carts" rows={byPerson} metric="reactions" color="var(--coral)" />
-        <RankedBarCard title="Most-reacted restaurants" description="Total emoji reactions on carts from each restaurant" rows={byRestaurant} metric="reactions" color="var(--violet)" />
+        <RankedBarCard title="Most-used emojis" description={`Total uses per emoji, ${scopeNote} · table shows how many carts each appeared on`} rows={usage} metric="reactions" color="var(--amber)" />
+        <RankedBarCard title="Whose carts get the most reactions" description={`Total emoji reactions on each person's carts, ${scopeNote}`} rows={byPerson} metric="reactions" color="var(--coral)" />
+        <RankedBarCard title="Most-reacted restaurants" description={`Total emoji reactions on carts from each restaurant, ${scopeNote}`} rows={byRestaurant} metric="reactions" color="var(--violet)" />
 
         <div className="card" style={{ "--card-accent": "var(--teal)" } as React.CSSProperties}>
           <div className="card-head">
             <div>
               <h2>Signature emojis</h2>
-              <div className="desc">The emoji each person's carts receive most · uses of it vs. total reactions</div>
+              <div className="desc">The emoji each person's carts receive most, {scopeNote} · uses of it vs. total reactions</div>
             </div>
           </div>
           {signatures.length === 0 ? (
-            <div className="empty">No reactions yet</div>
+            <div className="empty">No reactions, {scopeNote}</div>
           ) : (
             <table>
               <thead>
@@ -85,7 +88,7 @@ export function ReactionsPage({ carts }: { carts: Cart[] }) {
       <section className="section-gap">
         <div className="section-head">
           <h2>Most discussed / controversial</h2>
-          <span className="pill">All time</span>
+          <span className="pill">{label}</span>
         </div>
         <div className="tiles">
           <StatTile label="Thread replies" value={debate.totalReplies} hint={summary.totalCarts ? `${(debate.totalReplies / summary.totalCarts).toFixed(1)} per cart` : undefined} accent="var(--coral)" />
@@ -101,12 +104,12 @@ export function ReactionsPage({ carts }: { carts: Cart[] }) {
             <div>
               <h2>Most controversial carts</h2>
               <div className="desc">
-                Most thread replies per reaction, for carts with {MIN_REPLIES}+ replies. Lots of talk and few emoji usually means debate, though some replies are just "add me!"
+                Most thread replies per reaction, {scopeNote}, for carts with {MIN_REPLIES}+ replies. Lots of talk and few emoji usually means debate, though some replies are just "add me!"
               </div>
             </div>
           </div>
           {controversial.length === 0 ? (
-            <div className="empty">No carts with {MIN_REPLIES}+ replies yet</div>
+            <div className="empty">No carts with {MIN_REPLIES}+ replies, {scopeNote}</div>
           ) : (
             <div className="table-scroll">
               <table>
@@ -144,8 +147,8 @@ export function ReactionsPage({ carts }: { carts: Cart[] }) {
           )}
         </div>
 
-        <RankedBarCard title="Whose carts start the most threads" description="Total thread replies on each person's carts" rows={repliesByPerson} metric="replies" color="var(--teal)" />
-        <RankedBarCard title="Most-debated restaurants" description="Total thread replies on carts from each restaurant" rows={repliesByRestaurant} metric="replies" color="var(--amber)" />
+        <RankedBarCard title="Whose carts start the most threads" description={`Total thread replies on each person's carts, ${scopeNote}`} rows={repliesByPerson} metric="replies" color="var(--teal)" />
+        <RankedBarCard title="Most-debated restaurants" description={`Total thread replies on carts from each restaurant, ${scopeNote}`} rows={repliesByRestaurant} metric="replies" color="var(--amber)" />
       </section>
     </>
   );

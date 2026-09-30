@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import cartsCsv from "../nyc_food_yum_doordash_carts.csv?raw";
-import { UploadButton } from "./components/UploadButton";
 import { OverviewPage } from "./pages/Overview";
 import { TrendsPage } from "./pages/Trends";
 import { MonthlyPage } from "./pages/Monthly";
@@ -40,9 +39,7 @@ function routeFromHash(): RouteId {
 const fmtDay = (iso: string) => new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
 export default function App() {
-  const [carts, setCarts] = useState<Cart[]>(DEFAULT_CARTS);
-  const [source, setSource] = useState(DEFAULT_SOURCE);
-  const [error, setError] = useState<string | null>(null);
+  const carts: Cart[] = DEFAULT_CARTS;
   const [theme, setTheme] = useState<Theme>(initialTheme);
   const [route, setRoute] = useState<RouteId>(routeFromHash);
 
@@ -70,7 +67,7 @@ export default function App() {
         <div>
           <h1>DoorDash Cart Analytics</h1>
           <div className="sub">
-            Source: {source}
+            Source: {DEFAULT_SOURCE}
             {range && ` · ${fmtDay(range.from)} – ${fmtDay(range.to)}`}
           </div>
         </div>
@@ -83,15 +80,6 @@ export default function App() {
           >
             {theme === "dark" ? "☀" : "☾"}
           </button>
-          {source !== DEFAULT_SOURCE && (
-            <button className="btn secondary" onClick={() => { setCarts(DEFAULT_CARTS); setSource(DEFAULT_SOURCE); setError(null); }}>
-              Reset to default CSV
-            </button>
-          )}
-          <UploadButton
-            onLoaded={(c, label) => { setCarts(c); setSource(label); setError(null); }}
-            onError={setError}
-          />
         </div>
       </header>
 
@@ -101,12 +89,10 @@ export default function App() {
         ))}
       </nav>
 
-      {error && <div className="error">Couldn't load that file: {error}</div>}
-
       <Page carts={carts} />
 
       <footer className="footer">
-        Loads nyc_food_yum_doordash_carts.csv by default. You can also upload a cart CSV, or JSON files from a Slack channel export (day files, optionally users.json). Parsing lives in src/lib/csv.ts and src/lib/slack.ts.
+        Data comes from nyc_food_yum_doordash_carts.csv at build time. Parsing lives in src/lib/csv.ts.
       </footer>
     </div>
   );

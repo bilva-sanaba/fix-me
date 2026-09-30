@@ -8,6 +8,8 @@ export interface RankedRow {
   occurrences?: number;
   /** Weekday rows only: carts / occurrences. */
   avgCarts?: number;
+  /** Thread replies, when the ranking is about discussion. */
+  replies?: number;
 }
 
 export interface Summary {

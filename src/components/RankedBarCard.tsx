@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { RankedRow } from "../lib/analytics";
 
-type Metric = "carts" | "reactions" | "avgCarts";
+type Metric = "carts" | "reactions" | "avgCarts" | "replies";
 
 interface Props {
   title: string;
@@ -20,11 +20,12 @@ interface Props {
   wide?: boolean;
 }
 
-const LABEL: Record<Metric, string> = { carts: "Carts", reactions: "Reactions", avgCarts: "Avg carts" };
+const LABEL: Record<Metric, string> = { carts: "Carts", reactions: "Reactions", avgCarts: "Avg carts", replies: "Replies" };
 const FORMAT: Record<Metric, (v: number) => string> = {
   carts: (v) => String(v),
   reactions: (v) => String(v),
   avgCarts: (v) => v.toFixed(1),
+  replies: (v) => String(v),
 };
 
 const tooltipStyle = {
@@ -44,6 +45,7 @@ export function RankedBarCard({ title, description, rows, metric = "carts", colo
   const columns = layout === "columns";
   const fmt = FORMAT[metric];
   const hasAvg = rows.some((r) => r.avgCarts !== undefined);
+  const hasReplies = rows.some((r) => r.replies !== undefined);
 
   return (
     <div className={`card${wide ? " wide" : ""}`} style={{ "--card-accent": color } as React.CSSProperties}>
@@ -105,6 +107,7 @@ export function RankedBarCard({ title, description, rows, metric = "carts", colo
               {hasAvg && <th className="num">Avg carts / day</th>}
               <th className="num">Reactions</th>
               <th className="num">Reactions / cart</th>
+              {hasReplies && <th className="num">Replies</th>}
             </tr>
           </thead>
           <tbody>
@@ -117,6 +120,7 @@ export function RankedBarCard({ title, description, rows, metric = "carts", colo
                 {hasAvg && <td className="num">{(r.avgCarts ?? 0).toFixed(2)}</td>}
                 <td className="num">{r.reactions}</td>
                 <td className="num">{r.carts ? (r.reactions / r.carts).toFixed(1) : "–"}</td>
+                {hasReplies && <td className="num">{r.replies ?? 0}</td>}
               </tr>
             ))}
           </tbody>

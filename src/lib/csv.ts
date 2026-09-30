@@ -84,6 +84,8 @@ export function parseCartsCsv(text: string): Cart[] {
         : Object.values(breakdown).reduce((a, b) => a + b, 0),
       reactionBreakdown: breakdown,
       url: get(r, "cart_url") || undefined,
+      threadReplies: Number(get(r, "thread_replies")) || 0,
+      slackLink: link || undefined,
     };
   });
 }

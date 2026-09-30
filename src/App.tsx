@@ -1,19 +1,21 @@
 import { useMemo, useState } from "react";
-import sample from "./data/sample-carts.json";
+import cartsCsv from "../nyc_food_yum_doordash_carts.csv?raw";
 import { StatTile } from "./components/StatTile";
 import { RankedBarCard } from "./components/RankedBarCard";
 import { TopCartsTable } from "./components/TopCartsTable";
 import { UploadButton } from "./components/UploadButton";
+import { parseCartsCsv } from "./lib/csv";
 import { cartsByCreator, cartsByDayOfWeek, cartsByRestaurant, summarize, topReactedCarts } from "./lib/analytics";
 import type { Cart } from "./lib/types";
 
-const SAMPLE = sample as unknown as Cart[];
+const DEFAULT_CARTS = parseCartsCsv(cartsCsv);
+const DEFAULT_SOURCE = "nyc_food_yum_doordash_carts.csv";
 
 const fmtDay = (iso: string) => new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
 export default function App() {
-  const [carts, setCarts] = useState<Cart[]>(SAMPLE);
-  const [source, setSource] = useState("sample data");
+  const [carts, setCarts] = useState<Cart[]>(DEFAULT_CARTS);
+  const [source, setSource] = useState(DEFAULT_SOURCE);
   const [error, setError] = useState<string | null>(null);
 
   const summary = useMemo(() => summarize(carts), [carts]);
@@ -33,9 +35,9 @@ export default function App() {
           </div>
         </div>
         <div className="actions">
-          {source !== "sample data" && (
-            <button className="btn secondary" onClick={() => { setCarts(SAMPLE); setSource("sample data"); setError(null); }}>
-              Reset to sample
+          {source !== DEFAULT_SOURCE && (
+            <button className="btn secondary" onClick={() => { setCarts(DEFAULT_CARTS); setSource(DEFAULT_SOURCE); setError(null); }}>
+              Reset to default CSV
             </button>
           )}
           <UploadButton
@@ -66,7 +68,7 @@ export default function App() {
       </section>
 
       <footer className="footer">
-        Upload one or more JSON files from a Slack channel export (day files, optionally users.json). Parsing lives in src/lib/slack.ts.
+        Loads nyc_food_yum_doordash_carts.csv by default. You can also upload a cart CSV, or JSON files from a Slack channel export (day files, optionally users.json). Parsing lives in src/lib/csv.ts and src/lib/slack.ts.
       </footer>
     </div>
   );

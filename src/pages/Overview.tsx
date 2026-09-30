@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { MonthPicker, useMonthScope } from "../components/MonthPicker";
 import { StatTile } from "../components/StatTile";
 import { RankedBarCard } from "../components/RankedBarCard";
 import { TopCartsTable } from "../components/TopCartsTable";
@@ -6,23 +7,15 @@ import {
   cartsByCreator,
   cartsByDayOfWeek,
   cartsByRestaurant,
-  cartsInMonth,
-  monthsIn,
   summarize,
   topCombo,
   topReactedCarts,
 } from "../lib/analytics";
 import type { Cart } from "../lib/types";
 
-const ALL = "all";
-
 export function OverviewPage({ carts }: { carts: Cart[] }) {
-  const months = useMemo(() => monthsIn(carts), [carts]);
-  const [selected, setSelected] = useState<string>(() => months[0]?.key ?? ALL);
-
-  const isAll = selected === ALL;
-  const label = isAll ? "All time" : months.find((m) => m.key === selected)?.label ?? selected;
-  const scoped = useMemo(() => (isAll ? carts : cartsInMonth(carts, selected)), [carts, selected, isAll]);
+  const scope = useMonthScope(carts);
+  const { isAll, scoped, scopeNote } = scope;
 
   const allTime = useMemo(() => summarize(carts), [carts]);
   const stats = useMemo(() => summarize(scoped), [scoped]);
@@ -33,22 +26,13 @@ export function OverviewPage({ carts }: { carts: Cart[] }) {
   const combo = useMemo(() => topCombo(scoped), [scoped]);
 
   const allTimeHint = (n: number) => (isAll ? undefined : `All time: ${n.toLocaleString()}`);
-  const scopeNote = isAll ? "all time" : label;
 
   return (
     <>
       <section>
         <div className="section-head">
           <h2>Showing</h2>
-          <select className="select" value={selected} onChange={(e) => setSelected(e.target.value)} aria-label="Month">
-            {months.map((m) => (
-              <option key={m.key} value={m.key}>{m.label}</option>
-            ))}
-            <option value={ALL}>All time</option>
-          </select>
-          {!isAll && months[0]?.key !== selected && (
-            <button className="btn secondary small" onClick={() => setSelected(months[0].key)}>Latest month</button>
-          )}
+          <MonthPicker scope={scope} />
         </div>
         <div className="tiles">
           <StatTile label="Carts" value={stats.totalCarts} hint={allTimeHint(allTime.totalCarts)} accent="var(--coral)" />

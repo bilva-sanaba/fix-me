@@ -3,6 +3,7 @@ import cartsCsv from "../nyc_food_yum_doordash_carts.csv?raw";
 import { OverviewPage } from "./pages/Overview";
 import { TrendsPage } from "./pages/Trends";
 import { MonthlyPage } from "./pages/Monthly";
+import { EmojisPage } from "./pages/Emojis";
 import { parseCartsCsv } from "./lib/csv";
 import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
@@ -28,6 +29,7 @@ const ROUTES = [
   { id: "overview", label: "Overview", Page: OverviewPage },
   { id: "trends", label: "Trends", Page: TrendsPage },
   { id: "monthly", label: "Monthly winners", Page: MonthlyPage },
+  { id: "emojis", label: "Emojis", Page: EmojisPage },
 ] as const;
 type RouteId = (typeof ROUTES)[number]["id"];
 

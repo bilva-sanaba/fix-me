@@ -137,6 +137,8 @@ export function topCombo(carts: Cart[]): Combo | undefined {
   const pairs = new Map<string, Combo>();
   const perPerson = new Map<string, number>();
   for (const c of carts) {
+    // A missing restaurant isn't a combo; skip so "Someone · Unknown" can't win.
+    if (!c.restaurant || /^unknown$/i.test(c.restaurant.trim())) continue;
     perPerson.set(c.createdBy, (perPerson.get(c.createdBy) ?? 0) + 1);
     const key = `${c.createdBy}\u0000${c.restaurant}`;
     const row = pairs.get(key) ?? { createdBy: c.createdBy, restaurant: c.restaurant, carts: 0, personTotal: 0 };

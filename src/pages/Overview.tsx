@@ -35,7 +35,7 @@ export function OverviewPage({ carts }: { carts: Cart[] }) {
           <StatTile
             label="Top person + restaurant combo"
             value={combo ? `${combo.createdBy} · ${combo.restaurant}` : "–"}
-            hint={combo ? `${combo.carts} carts · ${Math.round((100 * combo.carts) / combo.personTotal)}% of ${combo.createdBy}'s ${combo.personTotal} carts, all time` : undefined}
+            hint={combo ? `${combo.carts} carts · ${Math.round((100 * combo.carts) / combo.personTotal)}% of ${combo.createdBy}'s ${combo.personTotal} known-restaurant carts, all time` : undefined}
             accent="var(--violet)"
             compact
           />

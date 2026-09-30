@@ -1,13 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
-import sample from "./data/sample-carts.json";
+import cartsCsv from "../nyc_food_yum_doordash_carts.csv?raw";
 import { UploadButton } from "./components/UploadButton";
 import { OverviewPage } from "./pages/Overview";
 import { TrendsPage } from "./pages/Trends";
 import { MonthlyPage } from "./pages/Monthly";
+import { parseCartsCsv } from "./lib/csv";
 import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
 
-const SAMPLE = sample as unknown as Cart[];
+const DEFAULT_CARTS = parseCartsCsv(cartsCsv);
+const DEFAULT_SOURCE = "nyc_food_yum_doordash_carts.csv";
 
 type Theme = "dark" | "light";
 const THEME_KEY = "dd-theme";
@@ -38,8 +40,8 @@ function routeFromHash(): RouteId {
 const fmtDay = (iso: string) => new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
 export default function App() {
-  const [carts, setCarts] = useState<Cart[]>(SAMPLE);
-  const [source, setSource] = useState("sample data");
+  const [carts, setCarts] = useState<Cart[]>(DEFAULT_CARTS);
+  const [source, setSource] = useState(DEFAULT_SOURCE);
   const [error, setError] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>(initialTheme);
   const [route, setRoute] = useState<RouteId>(routeFromHash);
@@ -81,9 +83,9 @@ export default function App() {
           >
             {theme === "dark" ? "☀" : "☾"}
           </button>
-          {source !== "sample data" && (
-            <button className="btn secondary" onClick={() => { setCarts(SAMPLE); setSource("sample data"); setError(null); }}>
-              Reset to sample
+          {source !== DEFAULT_SOURCE && (
+            <button className="btn secondary" onClick={() => { setCarts(DEFAULT_CARTS); setSource(DEFAULT_SOURCE); setError(null); }}>
+              Reset to default CSV
             </button>
           )}
           <UploadButton
@@ -104,7 +106,7 @@ export default function App() {
       <Page carts={carts} />
 
       <footer className="footer">
-        Upload one or more JSON files from a Slack channel export (day files, optionally users.json). Parsing lives in src/lib/slack.ts.
+        Loads nyc_food_yum_doordash_carts.csv by default. You can also upload a cart CSV, or JSON files from a Slack channel export (day files, optionally users.json). Parsing lives in src/lib/csv.ts and src/lib/slack.ts.
       </footer>
     </div>
   );

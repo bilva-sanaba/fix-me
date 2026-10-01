@@ -6,6 +6,7 @@ import { MonthlyPage } from "./pages/Monthly";
 import { ReactionsPage } from "./pages/Reactions";
 import { VarietyPage } from "./pages/Variety";
 import { PeoplePage } from "./pages/People";
+import { RestaurantsPage } from "./pages/Restaurants";
 import { parseCartsCsv } from "./lib/csv";
 import { summarize } from "./lib/analytics";
 import type { Cart } from "./lib/types";
@@ -34,6 +35,7 @@ const ROUTES = [
   { id: "reactions", label: "Reactions", Page: ReactionsPage },
   { id: "variety", label: "Variety", Page: VarietyPage },
   { id: "people", label: "People", Page: PeoplePage },
+  { id: "restaurants", label: "Restaurants", Page: RestaurantsPage },
 ] as const;
 type RouteId = (typeof ROUTES)[number]["id"];
 
